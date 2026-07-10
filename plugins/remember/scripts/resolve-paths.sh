@@ -1,0 +1,126 @@
+#!/bin/bash
+# ============================================================================
+# resolve-paths.sh — Single source of truth for pipeline path resolution
+# ============================================================================
+#
+# DESCRIPTION
+#   Resolves PROJECT_DIR (the user's project root) and PIPELINE_DIR (the
+#   plugin's install location) from environment variables set by Claude Code.
+#   All pipeline scripts source this file instead of computing paths inline.
+#
+#   Supports three install layouts:
+#     1. Local:       $PROJECT/.claude/remember/scripts/resolve-paths.sh
+#     2. Marketplace: ~/.claude/plugins/cache/*/remember/*/scripts/resolve-paths.sh
+#     3. Symlinked:   Any of the above with symlinks in the chain
+#
+# USAGE
+#   source "$(dirname "$0")/resolve-paths.sh"
+#   # Now PROJECT_DIR and PIPELINE_DIR are set and validated
+#
+# ENVIRONMENT (inputs)
+#   CLAUDE_PROJECT_DIR    Project root (set by Claude Code hooks)
+#   CLAUDE_PLUGIN_ROOT    Plugin install directory (set by Claude Code hooks)
+#
+# ENVIRONMENT (outputs)
+#   PROJECT_DIR           Resolved project root (validated to exist)
+#   PIPELINE_DIR          Resolved plugin root (validated to exist)
+#
+# EXIT CODES
+#   1   Path resolution failed (PROJECT_DIR or PIPELINE_DIR not found)
+#
+# ============================================================================
+
+# --- Restrict file creation permissions ---
+# Prevent log files, memory files, and temp files from being world/group readable.
+# On multi-user machines (shared dev box, CI runner, jumphost) the default umask
+# (022) creates files as -rw-r--r--, leaking project paths, branch names, token
+# counts, and memory contents to any local user.  Setting 077 here covers every
+# downstream file created after this source: logs, .remember/ dirs, TMPDIR temps.
+umask 077
+
+# --- Resolve PIPELINE_DIR (where the plugin code lives) ---
+#
+# Priority:
+#   1. CLAUDE_PLUGIN_ROOT (set by Claude Code for marketplace installs)
+#   2. Walk up from this script's real location to find the plugin root
+#      (works for local installs where scripts/ is inside the plugin dir)
+_SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+_PLUGIN_ROOT_CANDIDATE="$(cd "$_SCRIPT_DIR/.." && pwd)"
+
+if [ -n "$CLAUDE_PLUGIN_ROOT" ]; then
+    PIPELINE_DIR="$CLAUDE_PLUGIN_ROOT"
+elif [ -f "$_PLUGIN_ROOT_CANDIDATE/pipeline/haiku.py" ]; then
+    # Local install: scripts/ is one level below the plugin root
+    PIPELINE_DIR="$_PLUGIN_ROOT_CANDIDATE"
+else
+    _msg="FATAL: Cannot resolve plugin root. CLAUDE_PLUGIN_ROOT is not set and $_PLUGIN_ROOT_CANDIDATE/pipeline/haiku.py does not exist."
+    echo "$_msg" >&2
+    # Try to log if we can find a log directory
+    _log_dir="${CLAUDE_PROJECT_DIR:-.}/.remember/logs"
+    if [ -d "$_log_dir" ]; then
+        echo "$(date '+%H:%M:%S') [resolve] $_msg" >> "$_log_dir/memory-$(date '+%Y-%m-%d').log" 2>/dev/null
+    fi
+    exit 1
+fi
+
+# --- Resolve PROJECT_DIR (the user's project root) ---
+#
+# Priority:
+#   1. CLAUDE_PROJECT_DIR (set by Claude Code — always correct)
+#   2. If PIPELINE_DIR is inside a .claude/remember/ structure, derive from that
+#   3. Fail — we cannot guess the project root from a marketplace cache path
+if [ -n "$CLAUDE_PROJECT_DIR" ]; then
+    PROJECT_DIR="$CLAUDE_PROJECT_DIR"
+elif [[ "$PIPELINE_DIR" == *"/.claude/remember" ]]; then
+    # Local install: plugin is at $PROJECT/.claude/remember
+    PROJECT_DIR="$(cd "$PIPELINE_DIR/../.." && pwd)"
+else
+    _msg="FATAL: Cannot resolve project root. CLAUDE_PROJECT_DIR is not set and plugin is not in a local .claude/remember/ layout (PIPELINE_DIR=$PIPELINE_DIR)."
+    echo "$_msg" >&2
+    _log_dir="${PROJECT_DIR:-.}/.remember/logs"
+    if [ -d "$_log_dir" ]; then
+        echo "$(date '+%H:%M:%S') [resolve] $_msg" >> "$_log_dir/memory-$(date '+%Y-%m-%d').log" 2>/dev/null
+    fi
+    exit 1
+fi
+
+# --- Windows shell normalization (Git Bash / MSYS / Cygwin) ----------------
+# Claude Code stores sessions under a Windows-native slug (e.g.
+# "C--Users-dev-project") computed from the Win32 path "C:\Users\dev\project".
+# But on Windows shells, $CLAUDE_PROJECT_DIR arrives as a POSIX-style path
+# ("/c/Users/dev/project") and our sed-based slug produces "-c-Users-dev-..."
+# which never matches. The plugin's `ls $SESSION_DIR/*.jsonl` then returns
+# nothing and the entire save pipeline silently no-ops.
+#
+# Convert /c/Users/... → C:\Users\... here so all downstream slug computations
+# (3 shell sites + Python `_session_dir`) align with Claude Code's storage.
+# On Linux/macOS bash $OSTYPE is "linux-gnu" or "darwin*"; the case below
+# never matches and PROJECT_DIR is left untouched.
+case "$OSTYPE" in
+    msys|cygwin)
+        if [[ "$PROJECT_DIR" =~ ^/([a-zA-Z])/(.*)$ ]]; then
+            _drive=$(printf '%s' "${BASH_REMATCH[1]}" | tr '[:lower:]' '[:upper:]')
+            _rest="${BASH_REMATCH[2]//\//\\}"
+            PROJECT_DIR="${_drive}:\\${_rest}"
+        fi
+        ;;
+esac
+
+# --- Validate both paths exist ---
+if [ ! -d "$PROJECT_DIR" ]; then
+    _msg="FATAL: PROJECT_DIR does not exist: $PROJECT_DIR"
+    echo "$_msg" >&2
+    exit 1
+fi
+
+if [ ! -d "$PIPELINE_DIR" ]; then
+    _msg="FATAL: PIPELINE_DIR does not exist: $PIPELINE_DIR"
+    echo "$_msg" >&2
+    exit 1
+fi
+
+# --- Export for subprocesses (critical for nohup) ---
+export CLAUDE_PROJECT_DIR="$PROJECT_DIR"
+export CLAUDE_PLUGIN_ROOT="$PIPELINE_DIR"
+export PROJECT_DIR
+export PIPELINE_DIR

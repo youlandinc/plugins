@@ -1,0 +1,114 @@
+# Changelog
+
+## [0.3.1](https://github.com/gemini-cli-extensions/spanner/compare/0.3.0...0.3.1) (2026-05-07)
+
+
+### Features
+
+* Add support for HTTPS/TLS listener ([mcp-toolbox#​3126](https://redirect.github.com/googleapis/mcp-toolbox/issues/3126)) ([8bc385d](https://redirect.github.com/googleapis/mcp-toolbox/commit/8bc385d7d6fd9ed2ad13503d9feb503de0b512b1)) ([0e97032](https://github.com/gemini-cli-extensions/spanner/commit/0e97032c469f14e58e177d1c523e94cb2217df51))
+
+
+### Bug Fixes
+
+* **mcp:** Implement router-level logger injection for MCP auth ([mcp-toolbox#​3067](https://redirect.github.com/googleapis/mcp-toolbox/issues/3067)) ([ccc7cf5](https://redirect.github.com/googleapis/mcp-toolbox/commit/ccc7cf5ee8a1bacb6b57faf41ae5a1cc3da5299e)) ([0e97032](https://github.com/gemini-cli-extensions/spanner/commit/0e97032c469f14e58e177d1c523e94cb2217df51))
+* Allow converting string literal block with list ([mcp-toolbox#​3050](https://redirect.github.com/googleapis/mcp-toolbox/issues/3050)) ([36ab2a9](https://redirect.github.com/googleapis/mcp-toolbox/commit/36ab2a98f9f2d03c27eea389d2281bfc4581ffa1)), closes [mcp-toolbox#​3023](https://redirect.github.com/googleapis/mcp-toolbox/issues/3023) ([0e97032](https://github.com/gemini-cli-extensions/spanner/commit/0e97032c469f14e58e177d1c523e94cb2217df51))
+* Prevent test.db from being created during unit tests ([mcp-toolbox#​3042](https://redirect.github.com/googleapis/mcp-toolbox/issues/3042)) ([d10d2ca](https://redirect.github.com/googleapis/mcp-toolbox/commit/d10d2caeb7c9eda7d17d6dbd9f63363b2bc23a7a)) ([0e97032](https://github.com/gemini-cli-extensions/spanner/commit/0e97032c469f14e58e177d1c523e94cb2217df51))
+* Remove hardcoded \* allowed origin for sse ([mcp-toolbox#​3054](https://redirect.github.com/googleapis/mcp-toolbox/issues/3054)) ([c4c7bd9](https://redirect.github.com/googleapis/mcp-toolbox/commit/c4c7bd917e686de68e2be866cfe3872c3439efae)) ([0e97032](https://github.com/gemini-cli-extensions/spanner/commit/0e97032c469f14e58e177d1c523e94cb2217df51))
+
+## [0.3.0](https://github.com/gemini-cli-extensions/spanner/compare/0.2.6...0.3.0) (2026-04-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* add support for skills ([#105](https://github.com/gemini-cli-extensions/spanner/issues/105)) ([9b89c1f](https://github.com/gemini-cli-extensions/spanner/commit/9b89c1fed5d36dfd65ce7d0bfbe9a455ee90d4a8))
+* update repo name ([mcp-toolbox#​2968](https://redirect.github.com/googleapis/mcp-toolbox/issues/2968))
+
+### Features
+
+* **source/spanner:** Restructure prebuilt toolsets ([mcp-toolbox#​2641](https://redirect.github.com/googleapis/mcp-toolbox/issues/2641)) ([ea2b698](https://redirect.github.com/googleapis/mcp-toolbox/commit/ea2b698b03517c400bbaef27f56c4d3abead8b2c)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* **skill:** Attach user agent metadata for generated skill ([mcp-toolbox#​2697](https://redirect.github.com/googleapis/mcp-toolbox/issues/2697)) ([9598a6a](https://redirect.github.com/googleapis/mcp-toolbox/commit/9598a6a32597b9c9abdb0f20c06d86a01b0d011f)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* **skill:** Update skill generation logic ([mcp-toolbox#​2646](https://redirect.github.com/googleapis/mcp-toolbox/issues/2646)) ([c233eee](https://redirect.github.com/googleapis/mcp-toolbox/commit/c233eee98cd9621526cb286245f3874f5bd6e7da)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4)) ([mcp-toolbox#​2733](https://redirect.github.com/googleapis/mcp-toolbox/issues/2733)) ([5b85c65](https://redirect.github.com/googleapis/mcp-toolbox/commit/5b85c65960dba9bfaf4cadca6d44532a153976e1)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* **skills:** Add additional-notes flag to generate skills command ([mcp-toolbox#​2696](https://redirect.github.com/googleapis/mcp-toolbox/issues/2696)) ([73bf962](https://redirect.github.com/googleapis/mcp-toolbox/commit/73bf962459b76872f748248bb5e289be232a30b6)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* **skills:** Add Claude Code support to generated scripts ([mcp-toolbox#​2966](https://redirect.github.com/googleapis/mcp-toolbox/issues/2966)) ([a1609e1](https://redirect.github.com/googleapis/mcp-toolbox/commit/a1609e10a2eaf4ea68eae36acec3eed355b8a052)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* **skills:** Add codex user agent ([mcp-toolbox#​2973](https://redirect.github.com/googleapis/mcp-toolbox/issues/2973)) ([070e939](https://redirect.github.com/googleapis/mcp-toolbox/commit/070e9399c02f088d43175ce6bf343378beb7f584)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* **skills:** Tool invocation via npx ([mcp-toolbox#​2916](https://redirect.github.com/googleapis/mcp-toolbox/issues/2916)) ([377dc5b](https://redirect.github.com/googleapis/mcp-toolbox/commit/377dc5b00145a0044eef39314dd6b0ef5966fcd7)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* add Claude Code plugin config ([#107](https://github.com/gemini-cli-extensions/spanner/issues/107)) ([9e4007d](https://github.com/gemini-cli-extensions/spanner/commit/9e4007d2bf3dd71757e247bdc765f669c2ebd7c4))
+* add Codex plugin config ([#109](https://github.com/gemini-cli-extensions/spanner/issues/109)) ([e91ea1b](https://github.com/gemini-cli-extensions/spanner/commit/e91ea1bfd7155eaceda4f82dc630ac5708c7c295))
+
+
+### Bug Fixes
+
+* **skill:** Fix env variable propagation ([mcp-toolbox#​2645](https://redirect.github.com/googleapis/mcp-toolbox/issues/2645)) ([5271368](https://redirect.github.com/googleapis/mcp-toolbox/commit/52713687208994c423da64333cb0a04fb483f794)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* **skills:** Fix integer parameter parsing through agent skills ([mcp-toolbox#​2847](https://redirect.github.com/googleapis/mcp-toolbox/issues/2847)) ([4564efe](https://redirect.github.com/googleapis/mcp-toolbox/commit/4564efe75436b4081d9f3d1f7c912bc64c13f850)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* **skills:** Fix skill generation template ([mcp-toolbox#​2914](https://redirect.github.com/googleapis/mcp-toolbox/issues/2914)) ([a01a15e](https://redirect.github.com/googleapis/mcp-toolbox/commit/a01a15ed1aa9a83eda8362578fed2e3a3c8dde99)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* **skills:** Improve flag validation and silence unit test output ([mcp-toolbox#​2759](https://redirect.github.com/googleapis/mcp-toolbox/issues/2759)) ([f3da6aa](https://redirect.github.com/googleapis/mcp-toolbox/commit/f3da6aa5e23b609a1ac9ecc098bccea02f2388ab)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+* **skills:** Prevent empty strings overriding optional env vars in node scripts ([mcp-toolbox#​2963](https://redirect.github.com/googleapis/mcp-toolbox/issues/2963)) ([c52adeb](https://redirect.github.com/googleapis/mcp-toolbox/commit/c52adeba76fc13d0e6e415f6393def0648e478d6)) ([267c8c3](https://github.com/gemini-cli-extensions/spanner/commit/267c8c3ca8641d966778a435f1e2c43b6f7129e4))
+
+## [0.2.6](https://github.com/gemini-cli-extensions/spanner/compare/0.2.5...0.2.6) (2026-02-18)
+
+
+### Features
+
+* **deps:** update dependency googleapis/mcp-toolbox to v0.27.0 ([#83](https://github.com/gemini-cli-extensions/spanner/issues/83)) ([0a7c828](https://github.com/gemini-cli-extensions/spanner/commit/0a7c828af00ac9aa79f690975ea279c4799ab8be))
+
+## [0.2.5](https://github.com/gemini-cli-extensions/spanner/compare/0.2.4...0.2.5) (2026-01-29)
+
+
+### Features
+
+* add dialect and configuration instructions ([#79](https://github.com/gemini-cli-extensions/spanner/issues/79)) ([a1dbc8c](https://github.com/gemini-cli-extensions/spanner/commit/a1dbc8c284fed0d3d1b3a0212f8399f66a46885d))
+
+## [0.2.4](https://github.com/gemini-cli-extensions/spanner/compare/0.2.3...0.2.4) (2026-01-27)
+
+
+### Features
+
+* add Configuration settings ([#73](https://github.com/gemini-cli-extensions/spanner/issues/73)) ([5c7cf28](https://github.com/gemini-cli-extensions/spanner/commit/5c7cf28d7b4773741e39a57c2b67b9b267e78e92))
+
+## [0.2.3](https://github.com/gemini-cli-extensions/spanner/compare/0.2.2...0.2.3) (2026-01-26)
+
+
+### Features
+
+* **deps:** update dependency googleapis/mcp-toolbox to v0.26.0 ([#75](https://github.com/gemini-cli-extensions/spanner/issues/75)) ([7b8248b](https://github.com/gemini-cli-extensions/spanner/commit/7b8248b2754a1d8cf7315d4064830d2ecf9ccb5d))
+
+## [0.2.2](https://github.com/gemini-cli-extensions/spanner/compare/0.2.1...0.2.2) (2026-01-15)
+
+
+### Bug Fixes
+
+* **spanner:** Move list graphs validation to runtime ([mcp-toolbox#​2154](https://redirect.github.com/googleapis/mcp-toolbox/issues/2154)) ([914b3ee](https://redirect.github.com/googleapis/mcp-toolbox/commit/914b3eefda40a650efe552d245369e007277dab5)) ([39e9e56](https://github.com/gemini-cli-extensions/spanner/commit/39e9e562a65351dd04dd165477a48222eea9d430))
+* List tables tools null fix ([mcp-toolbox#​2107](https://redirect.github.com/googleapis/mcp-toolbox/issues/2107)) ([2b45266](https://redirect.github.com/googleapis/mcp-toolbox/commit/2b452665983154041d4cd0ed7d82532e4af682eb)) ([39e9e56](https://github.com/gemini-cli-extensions/spanner/commit/39e9e562a65351dd04dd165477a48222eea9d430))
+
+## [0.2.1](https://github.com/gemini-cli-extensions/spanner/compare/0.2.0...0.2.1) (2025-12-05)
+
+
+### Features
+
+* **tools/spanner:** Add spanner list graphs to prebuiltconfigs ([mcp-toolbox#​2056](https://redirect.github.com/googleapis/mcp-toolbox/issues/2056)) ([0e7fbf4](https://redirect.github.com/googleapis/mcp-toolbox/commit/0e7fbf465c488397aa9d8cab2e55165fff4eb53c)) ([4737df6](https://github.com/gemini-cli-extensions/spanner/commit/4737df6ccecaa3a9e1485aca14257527c2d80cb3))
+
+## [0.2.0](https://github.com/gemini-cli-extensions/spanner/compare/0.1.1...0.2.0) (2025-11-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* **tools/spanner-list-tables:** Unmarshal `object_details` json string into map to make response have nested json ([mcp-toolbox#​1894](https://redirect.github.com/googleapis/mcp-toolbox/issues/1894)) ([446d62a](https://redirect.github.com/googleapis/mcp-toolbox/commit/446d62acd995d5128f52e9db254dd1c7138227c6))
+
+### Features
+
+* **tools/spanner-list-tables:** Unmarshal `object_details` json string into map to make response have nested json ([mcp-toolbox#​1894](https://redirect.github.com/googleapis/mcp-toolbox/issues/1894)) ([446d62a](https://redirect.github.com/googleapis/mcp-toolbox/commit/446d62acd995d5128f52e9db254dd1c7138227c6)) ([5215916](https://github.com/gemini-cli-extensions/spanner/commit/52159168bde85bda8e6094780362083cd6b929eb))
+
+## [0.1.1](https://github.com/gemini-cli-extensions/spanner/compare/0.1.0...0.1.1) (2025-09-30)
+
+
+### Features
+
+* additional instructions for the context file ([#32](https://github.com/gemini-cli-extensions/spanner/issues/32)) ([8a7e5a7](https://github.com/gemini-cli-extensions/spanner/commit/8a7e5a749c8280ab24b14298f5b8dfc8158e56b3))
+* standardize mcp server names ([#30](https://github.com/gemini-cli-extensions/spanner/issues/30)) ([0ae42f0](https://github.com/gemini-cli-extensions/spanner/commit/0ae42f0ae65e43d156b429a52798416a866ef869))
+
+## 0.1.0 (2025-09-21)
+
+
+### Features
+
+* add Spanner Extension ([#16](https://github.com/gemini-cli-extensions/spanner/issues/16)) ([1d12c5f](https://github.com/gemini-cli-extensions/spanner/commit/1d12c5fecb92330e55938951a448d99fe05d0599))
