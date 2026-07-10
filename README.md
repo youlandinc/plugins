@@ -1,4 +1,4 @@
-# youland-plugins
+# corepass-plugins
 
 A self-contained mirror of open-source Claude Code plugins, normalized so every
 plugin is a **local `./plugins/<name>` subdirectory**. This lets the Corepass

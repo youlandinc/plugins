@@ -1,9 +1,9 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "youland-plugins",
-  "description": "Directory of popular Claude Code extensions including development tools, productivity plugins, and MCP integrations",
+  "name": "corepass-plugins",
+  "description": "Curated open-source Claude Code plugins, normalized for Corepass.",
   "owner": {
-    "name": "youlandinc"
+    "name": "corepass"
   },
   "plugins": [
     {
