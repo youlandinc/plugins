@@ -1,4 +1,0 @@
-{
-    "project_name": "my_project",
-    "bot_name": "{{ cookiecutter.project_name }}"
-}

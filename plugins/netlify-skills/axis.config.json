@@ -1,7 +1,0 @@
-{
-  "scenarios": "./axis-scenarios",
-  "agents": ["codex", "claude-code", "gemini"],
-  "judging": {
-    "agents": ["codex"]
-  }
-}

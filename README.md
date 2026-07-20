@@ -1,22 +1,30 @@
 # corepass-plugins
 
-A self-contained mirror of open-source Claude Code plugins, normalized so every
-plugin is a **local `./plugins/<name>` subdirectory**. This lets the Corepass
-harness install/uninstall them through its existing local-source path with no
-runtime changes.
+Hosted plugin **catalog** for the Corepass harness. The single source of truth
+is [`catalog_seed.json`](catalog_seed.json) — a normalized directory of
+open-source Claude Code plugins.
 
-- **Generated**, do not hand-edit. Produced by
-  `scripts/normalize_plugins.py` in the `simple-coding-harness` repo.
-- **Source**: upstream [`anthropics/claude-plugins-official`](https://github.com/anthropics/claude-plugins-official).
-- **Scope**: only plugins that ship a `LICENSE`/`COPYING` file are included
-  (`--require-license`). Each entry records its upstream `url` + pinned `rev`
-  under `_provenance` in `.claude-plugin/marketplace.json`.
+- **Consumed remotely**: the app fetches the raw file at
+  `https://raw.githubusercontent.com/youlandinc/plugins/main/catalog_seed.json`
+  (via `COREPASS_CATALOG_URL`), so the plugin list updates without shipping a
+  new app build.
+- Each entry carries install git coords (`gitUrl` / `gitRef` / `gitPath`,
+  pointing at each plugin's own upstream repo) plus enumerated components
+  (`skills` / `mcpServers` / `commands` / `subagents`). Install/uninstall clone
+  those coords through the existing catalog path — nothing is vendored here.
+- **Generated**, do not hand-edit. Produced by `scripts/normalize_plugins.py`
+  in the `simple-coding-harness` repo.
 
 ## Regenerate
 
 ```bash
-python scripts/normalize_plugins.py --out /path/to/plugins --all --require-license --prune
+python scripts/normalize_plugins.py --emit catalog-seed \
+  --out /path/to/plugins/catalog_seed.json \
+  --all --require-license \
+  --merge-into src/registry/data/catalog_seed.json
+# review, then commit + push
 ```
 
-Third-party plugins remain under their own licenses; see each
-`plugins/<name>/LICENSE`.
+Only plugins that ship a `LICENSE` file are included (`--require-license`);
+each entry records its upstream url + pinned rev under `_provenance`.
+Third-party plugins remain under their own licenses.

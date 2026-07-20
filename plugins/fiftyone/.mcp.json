@@ -1,9 +1,0 @@
-{
-  "mcpServers": {
-    "fiftyone": {
-      "command": "fiftyone-mcp",
-      "args": [],
-      "env": {}
-    }
-  }
-}
