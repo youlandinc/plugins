@@ -54,7 +54,8 @@
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/railway-1-.png"
     },
     {
       "id": "28528660",
@@ -219,7 +220,10 @@
           "sourceUrl": "https://github.com/heygen-com/hyperframes/blob/HEAD/skills/website-to-video/SKILL.md"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": [
+        "DESIGN"
+      ]
     },
     {
       "id": "26723531",
@@ -242,7 +246,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/databricks-2x.png",
         "websiteUrl": "https://www.databricks.com/",
         "createdAt": "1771259768609",
-        "updatedAt": "1771264035045"
+        "updatedAt": "1784076470127"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -359,7 +363,9 @@
           "sourcePath": "plugins/databricks/cursor/commands/databricks-setup.md",
           "sourceUrl": "https://github.com/databricks/databricks-agent-skills/blob/2b109a8695c11dd627d07f44c44f6db0b9dba4ee/plugins/databricks/cursor/commands/databricks-setup.md"
         }
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/databricks-2x.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "26177969",
@@ -412,7 +418,8 @@
           "description": "Configure the Port MCP server region (EU or US). Run this after installing the Port plugin to point the agent at the right data center."
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "26159727",
@@ -739,7 +746,8 @@
           "description": "Dataverse solution lifecycle — create, export, import, promote across environments, and validate deployments. Use when the user wants to package customizations, deploy to another environment, or move work between dev / test / prod."
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "26126658",
@@ -810,7 +818,9 @@
           "name": "roboflow"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/roboflow.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "26119850",
@@ -1049,7 +1059,8 @@
           "description": "Create a new Lovable project from a one-line brief and return the editor and preview links."
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "26111414",
@@ -1071,7 +1082,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/d-b.png",
         "websiteUrl": "https://dnb.com",
         "createdAt": "1781770490713",
-        "updatedAt": "1782241938511"
+        "updatedAt": "1784076432633"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -1096,7 +1107,8 @@
           "name": "dnb-risk-analytics"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "26107310",
@@ -1118,7 +1130,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/asana.png",
         "websiteUrl": "https://asana.com/",
         "createdAt": "1781770166337",
-        "updatedAt": "1781770166337"
+        "updatedAt": "1784076368683"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -1214,7 +1226,8 @@
           "name": "saw"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "26098679",
@@ -1236,7 +1249,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
         "websiteUrl": "https://aws.amazon.com/",
         "createdAt": "1770746255969",
-        "updatedAt": "1771264138842"
+        "updatedAt": "1784076376400"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -1289,7 +1302,8 @@
       "curatedCategoryKeys": [
         "DATA_ANALYTICS"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png"
     },
     {
       "id": "26098678",
@@ -1311,7 +1325,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
         "websiteUrl": "https://aws.amazon.com/",
         "createdAt": "1770746255969",
-        "updatedAt": "1771264138842"
+        "updatedAt": "1784076376400"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -1402,7 +1416,8 @@
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png"
     },
     {
       "id": "26098676",
@@ -1424,7 +1439,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
         "websiteUrl": "https://aws.amazon.com/",
         "createdAt": "1770746255969",
-        "updatedAt": "1771264138842"
+        "updatedAt": "1784076376400"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -1477,7 +1492,8 @@
       "curatedCategoryKeys": [
         "AGENT_ORCHESTRATION"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png"
     },
     {
       "id": "26087977",
@@ -1767,7 +1783,8 @@
       ],
       "curatedCategoryKeys": [
         "PRODUCTIVITY"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/mintlify-logo-1.png"
     },
     {
       "id": "23114788",
@@ -1788,7 +1805,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/arize.png",
         "websiteUrl": "https://arize.com/",
         "createdAt": "1780652139497",
-        "updatedAt": "1780652139497"
+        "updatedAt": "1784076365211"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -1879,7 +1896,8 @@
       ],
       "curatedCategoryKeys": [
         "AGENT_ORCHESTRATION"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/arize.png"
     },
     {
       "id": "21951242",
@@ -1979,7 +1997,8 @@
           "name": "mainframe"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "21010834",
@@ -2071,7 +2090,8 @@
       ],
       "curatedCategoryKeys": [
         "PRODUCTIVITY"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/monday.com.png"
     },
     {
       "id": "21002971",
@@ -2092,7 +2112,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/adobe-logo-2.png",
         "websiteUrl": "https://developer.adobe.com/app-builder/",
         "createdAt": "1781001338450",
-        "updatedAt": "1781250677960"
+        "updatedAt": "1784076345338"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -2136,7 +2156,8 @@
       "curatedCategoryKeys": [
         "PRODUCTIVITY"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/adobe-logo-2.png"
     },
     {
       "id": "20992516",
@@ -2339,7 +2360,8 @@
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/netlify.png"
     },
     {
       "id": "20988446",
@@ -2360,7 +2382,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/coralogix.png",
         "websiteUrl": "https://coralogix.com/",
         "createdAt": "1780999743774",
-        "updatedAt": "1780999743774"
+        "updatedAt": "1784076417089"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -2431,7 +2453,8 @@
             "description": "Select the Coralogix domain for your tenant based on the [Coralogix domain guide](https://coralogix.com/docs/user-guides/account-management/account-settings/coralogix-domain/)"
           }
         }
-      }
+      },
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/coralogix.png"
     },
     {
       "id": "20785328",
@@ -2478,7 +2501,8 @@
           "name": "quiverai"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "20784535",
@@ -2558,7 +2582,8 @@
           "name": "sonarqube"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "18281353",
@@ -2666,7 +2691,8 @@
           "sourceUrl": "https://github.com/raisely/cursor-plugin/blob/71e271c309a43b17d96c8de2f16d75b2f1f4f47e/mcp.json"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "14372196",
@@ -2730,7 +2756,8 @@
           "sourceUrl": "https://github.com/heygen-com/skills/blob/396fa481ee17ef5bdfc0c4122f468c4e3080fbe0/.mcp.json"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "14371557",
@@ -2752,7 +2779,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/chatprd-logo-1.png",
         "websiteUrl": "https://www.chatprd.ai/",
         "createdAt": "1780095489118",
-        "updatedAt": "1780095489118"
+        "updatedAt": "1784076403051"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -2898,10 +2925,10 @@
         "name": "parade-db",
         "displayName": "ParadeDB",
         "ownerUserId": 349775117,
-        "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/paradedb-logo-1.png",
+        "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/paradedb-logomark-1.png",
         "websiteUrl": "https://www.paradedb.com/",
         "createdAt": "1780038381148",
-        "updatedAt": "1780038381148"
+        "updatedAt": "1784069107803"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -3036,7 +3063,8 @@
       ],
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/monkio-1-.png"
     },
     {
       "id": "13566132",
@@ -3057,7 +3085,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -3105,7 +3133,8 @@
           "sourcePath": "thermos/agents/thermo-nuclear-review-subagent.md",
           "sourceUrl": "https://github.com/cursor/plugins/blob/e46364b8be46000b7df0f260550cd712afbb8d36/thermos/agents/thermo-nuclear-review-subagent.md"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "12838857",
@@ -3255,7 +3284,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -3495,7 +3524,8 @@
           "sourcePath": "pstack/agents/poteto-agent.md",
           "sourceUrl": "https://github.com/cursor/plugins/blob/e46364b8be46000b7df0f260550cd712afbb8d36/pstack/agents/poteto-agent.md"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "6398877",
@@ -3545,7 +3575,9 @@
           "sourcePath": "skills/modern-web-guidance/SKILL.md",
           "sourceUrl": "https://github.com/GoogleChrome/modern-web-guidance/blob/1dee00c2ae94d2e0c26d4a0c9fecb87c52bd82f9/skills/modern-web-guidance/SKILL.md"
         }
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/mwg-logomark.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "5420454",
@@ -3610,7 +3642,8 @@
           "sourcePath": "commands/higgs.md",
           "sourceUrl": "https://github.com/higgsfield-ai/cursor-plugin/blob/af1ae5a79611bb47b9e1db86c4afc13eb406ee07/commands/higgs.md"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "2507579",
@@ -3632,7 +3665,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/buildkite-logo-1.png",
         "websiteUrl": "https://buildkite.com/home/",
         "createdAt": "1778836954872",
-        "updatedAt": "1778837372894"
+        "updatedAt": "1784076397287"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -3692,7 +3725,8 @@
           "sourceUrl": "https://github.com/buildkite/skills/blob/252476999d4813b8f7412215e47328e1b60ae51c/mcp.json"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "146017",
@@ -3820,7 +3854,8 @@
       ],
       "curatedCategoryKeys": [
         "DATA_ANALYTICS"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/mixpanel-logo.png"
     },
     {
       "id": "10089",
@@ -3905,7 +3940,8 @@
           "sourceUrl": "https://github.com/sonatype/sonatype-cursor-plugin/blob/6f20d407da5df16beff44fde547b83c9c96fdad0/mcp.json"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "10038",
@@ -3927,7 +3963,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/corridor-logo.png",
         "websiteUrl": "https://www.corridor.dev/",
         "createdAt": "1778092490086",
-        "updatedAt": "1778233956388"
+        "updatedAt": "1784076466997"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -3957,7 +3993,8 @@
           "sourcePath": "plugins/corridor/hooks/hooks.json",
           "sourceUrl": "https://github.com/CorridorSecurity/corridor-cursor-plugin/blob/1b9ffba6552c0b3ff3b9bde87733bf99df9414e4/plugins/corridor/hooks/hooks.json"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "9461",
@@ -4006,7 +4043,8 @@
       ],
       "curatedCategoryKeys": [
         "AGENT_ORCHESTRATION"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/merge-logo.png"
     },
     {
       "id": "9347",
@@ -4074,7 +4112,8 @@
       ],
       "curatedCategoryKeys": [
         "AGENT_ORCHESTRATION"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/sourcegraph-logo.png"
     },
     {
       "id": "9345",
@@ -4095,7 +4134,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aikido-logo.png",
         "websiteUrl": "https://aikido.dev",
         "createdAt": "1778114904422",
-        "updatedAt": "1778114904422"
+        "updatedAt": "1784076352178"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -4143,7 +4182,9 @@
           "sourcePath": "mcp.json",
           "sourceUrl": "https://github.com/AikidoSec/aikido-cursor-plugin/blob/e1bd1dfee0ee0d890d51a0024b0ee7dee99fd3bf/mcp.json"
         }
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aikido-logo.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "9333",
@@ -4164,7 +4205,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -4186,7 +4227,8 @@
           "sourcePath": "orchestrate/skills/orchestrate/SKILL.md",
           "sourceUrl": "https://github.com/cursor/plugins/blob/e46364b8be46000b7df0f260550cd712afbb8d36/orchestrate/skills/orchestrate/SKILL.md"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "9301",
@@ -4210,7 +4252,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/airwallex-logo.png",
         "websiteUrl": "https://www.airwallex.com/us",
         "createdAt": "1778095691514",
-        "updatedAt": "1778095691514"
+        "updatedAt": "1784076355060"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -4260,7 +4302,8 @@
       "curatedCategoryKeys": [
         "PAYMENTS"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/airwallex-logo.png"
     },
     {
       "id": "9297",
@@ -4511,7 +4554,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/chainguard-logo.png",
         "websiteUrl": "https://www.chainguard.dev/",
         "createdAt": "1778092932747",
-        "updatedAt": "1778094039377"
+        "updatedAt": "1784076401200"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -4635,7 +4678,9 @@
           "sourceUrl": "https://github.com/chainguard-dev/chainguard-cursor-plugin/blob/4bb0158c2b1a443932b83bb9f344b7a718310d0a/mcp.json"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/chainguard-logo.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "9105",
@@ -5017,7 +5062,8 @@
       ],
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/twilio.png"
     },
     {
       "id": "8279",
@@ -5209,7 +5255,9 @@
           "sourceUrl": "https://github.com/sinch/sinch-plugins/blob/21687bd0168028bbd276445d487ee8a418009f70/plugins/sinch-cursor-plugin/commands/api/webhooks/list-webhook-triggers.md"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/sinch-logo.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "8006",
@@ -5487,7 +5535,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -5509,7 +5557,8 @@
           "sourcePath": "cursor-sdk/skills/cursor-sdk/SKILL.md",
           "sourceUrl": "https://github.com/cursor/plugins/blob/e46364b8be46000b7df0f260550cd712afbb8d36/cursor-sdk/skills/cursor-sdk/SKILL.md"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "7851",
@@ -5962,7 +6011,8 @@
           "sourcePath": "skills/sparkscan-web/SKILL.md",
           "sourceUrl": "https://github.com/scandit/skills/blob/e6ed07958722ed6860287a5863e419947f40cd78/skills/sparkscan-web/SKILL.md"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "7850",
@@ -5985,7 +6035,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/atlan-logo.png",
         "websiteUrl": "https://atlan.com/",
         "createdAt": "1777368198319",
-        "updatedAt": "1777368198319"
+        "updatedAt": "1784076371498"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -6035,7 +6085,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/datarobot-logo.png",
         "websiteUrl": "https://datarobot.com",
         "createdAt": "1777283892906",
-        "updatedAt": "1777286104817"
+        "updatedAt": "1784076472063"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -6126,7 +6176,8 @@
       ],
       "curatedCategoryKeys": [
         "AGENT_ORCHESTRATION"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/datarobot-logo.png"
     },
     {
       "id": "7621",
@@ -6293,7 +6344,8 @@
       ],
       "curatedCategoryKeys": [
         "AGENT_ORCHESTRATION"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/tabnine-logo.png"
     },
     {
       "id": "7619",
@@ -6687,7 +6739,8 @@
       ],
       "curatedCategoryKeys": [
         "DATA_ANALYTICS"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/opensearch-logo.png"
     },
     {
       "id": "6643",
@@ -6709,7 +6762,7 @@
         "verifiedAt": "1778697333976",
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/dagster-logo.png",
         "createdAt": "1776303281184",
-        "updatedAt": "1778697333985"
+        "updatedAt": "1784076469097"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -6735,7 +6788,8 @@
       "curatedCategoryKeys": [
         "DATA_ANALYTICS"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/dagster-logo.png"
     },
     {
       "id": "6394",
@@ -6807,7 +6861,8 @@
       "curatedCategoryKeys": [
         "DATA_ANALYTICS"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/thoughtspot-logo.png"
     },
     {
       "id": "6392",
@@ -6832,7 +6887,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/azure-logo-2.png",
         "websiteUrl": "https://azure.microsoft.com/",
         "createdAt": "1776307010077",
-        "updatedAt": "1776725898914"
+        "updatedAt": "1784076377605"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -7052,7 +7107,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/atlassian.png",
         "websiteUrl": "https://atlassian.com",
         "createdAt": "1771877262901",
-        "updatedAt": "1772049822575"
+        "updatedAt": "1784076373679"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -7107,7 +7162,8 @@
       ],
       "curatedCategoryKeys": [
         "PRODUCTIVITY"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/atlassian.png"
     },
     {
       "id": "6344",
@@ -7180,7 +7236,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -7226,7 +7282,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -7273,7 +7329,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
         "websiteUrl": "https://aws.amazon.com/",
         "createdAt": "1770746255969",
-        "updatedAt": "1771264138842"
+        "updatedAt": "1784076376400"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -7413,7 +7469,8 @@
       ],
       "curatedCategoryKeys": [
         "AGENT_ORCHESTRATION"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png"
     },
     {
       "id": "6198",
@@ -7435,7 +7492,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
         "websiteUrl": "https://aws.amazon.com/",
         "createdAt": "1770746255969",
-        "updatedAt": "1771264138842"
+        "updatedAt": "1784076376400"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -7480,7 +7537,8 @@
       ],
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png"
     },
     {
       "id": "6067",
@@ -7539,7 +7597,8 @@
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/workos-logo.png"
     },
     {
       "id": "6062",
@@ -8056,7 +8115,8 @@
       "curatedCategoryKeys": [
         "PRODUCTIVITY"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/granolalogo.png"
     },
     {
       "id": "5188",
@@ -8136,7 +8196,8 @@
       ],
       "curatedCategoryKeys": [
         "PRODUCTIVITY"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/resend-logo.png"
     },
     {
       "id": "5069",
@@ -8164,7 +8225,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/clickup-logo.png",
         "websiteUrl": "https://clickup.com",
         "createdAt": "1775516668958",
-        "updatedAt": "1776308270287"
+        "updatedAt": "1784076411612"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -8247,7 +8308,8 @@
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/turbopuffer-logo.png"
     },
     {
       "id": "4902",
@@ -8274,7 +8336,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/appwrite-logo.png",
         "websiteUrl": "https://appwrite.io/",
         "createdAt": "1775177968630",
-        "updatedAt": "1775530386706"
+        "updatedAt": "1784076362882"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -8379,7 +8441,8 @@
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/appwrite-logo.png"
     },
     {
       "id": "4793",
@@ -8402,7 +8465,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/bright-data-logo.png",
         "websiteUrl": "https://www.brightdata.com",
         "createdAt": "1775095099449",
-        "updatedAt": "1775095114014"
+        "updatedAt": "1784076393673"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -8557,7 +8620,7 @@
         "verifiedAt": "1778697347533",
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/auth0-logo.png",
         "createdAt": "1775082911428",
-        "updatedAt": "1778697347535"
+        "updatedAt": "1784076375247"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -8825,7 +8888,9 @@
           "sourcePath": "plugins/auth0/skills/go-jwt-middleware/SKILL.md",
           "sourceUrl": "https://github.com/auth0/agent-skills/blob/bdf0dc23f8b17446b2c94bc9f2e5a58d3f1bc114/plugins/auth0/skills/go-jwt-middleware/SKILL.md"
         }
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/auth0-logo.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "4457",
@@ -8853,7 +8918,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/cockroach-labs.png",
         "websiteUrl": "https://www.cockroachlabs.com",
         "createdAt": "1774979379092",
-        "updatedAt": "1775693819383"
+        "updatedAt": "1784076414178"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -9132,7 +9197,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/astronomer-logo.png",
         "websiteUrl": "https://astronomer.io",
         "createdAt": "1774474336188",
-        "updatedAt": "1774484631912"
+        "updatedAt": "1784076370363"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -9415,7 +9480,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/elastic-logo",
         "websiteUrl": "https://elastic.co",
         "createdAt": "1772483969417",
-        "updatedAt": "1773037755546"
+        "updatedAt": "1784076477338"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -9640,7 +9705,8 @@
       "curatedCategoryKeys": [
         "DATA_ANALYTICS"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/elastic-logo"
     },
     {
       "id": "3983",
@@ -9667,7 +9733,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/chargebee-logo.png",
         "websiteUrl": "https://www.chargebee.com/",
         "createdAt": "1774583020261",
-        "updatedAt": "1775530398403"
+        "updatedAt": "1784076402142"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -9692,7 +9758,8 @@
       "curatedCategoryKeys": [
         "PAYMENTS"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/chargebee-logo.png"
     },
     {
       "id": "3970",
@@ -9858,7 +9925,8 @@
       ],
       "curatedCategoryKeys": [
         "PAYMENTS"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/shopify-logo.png"
     },
     {
       "id": "3845",
@@ -9878,7 +9946,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -9900,7 +9968,8 @@
           "sourcePath": "cli-for-agent/skills/cli-for-agents/SKILL.md",
           "sourceUrl": "https://github.com/cursor/plugins/blob/e46364b8be46000b7df0f260550cd712afbb8d36/cli-for-agent/skills/cli-for-agents/SKILL.md"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "3795",
@@ -9927,7 +9996,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/dbt-labs.png",
         "websiteUrl": "https://getdbt.com",
         "createdAt": "1774297928061",
-        "updatedAt": "1774510555866"
+        "updatedAt": "1784076473364"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -10001,7 +10070,8 @@
       "curatedCategoryKeys": [
         "DATA_ANALYTICS"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/dbt-labs.png"
     },
     {
       "id": "3793",
@@ -10029,7 +10099,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/cloudinary-logo.png",
         "websiteUrl": "https://cloudinary.com",
         "createdAt": "1774480672498",
-        "updatedAt": "1775503375722"
+        "updatedAt": "1784076413189"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -10084,7 +10154,8 @@
           "sourceUrl": "https://github.com/cloudinary-devs/cloudinary-plugin/blob/7b443d7dbd607bfe4850d8cfcab6ba4cbf1a57c3/mcp.json"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "3780",
@@ -10112,7 +10183,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/encore-logo-plated.png",
         "websiteUrl": "https://encore.dev/",
         "createdAt": "1774473926684",
-        "updatedAt": "1774550914238"
+        "updatedAt": "1784076478286"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -10441,7 +10512,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -10489,7 +10560,8 @@
           "sourcePath": "agent-compatibility/agents/validation-review.md",
           "sourceUrl": "https://github.com/cursor/plugins/blob/e46364b8be46000b7df0f260550cd712afbb8d36/agent-compatibility/agents/validation-review.md"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "3508",
@@ -10590,7 +10662,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
         "websiteUrl": "https://aws.amazon.com/",
         "createdAt": "1770746255969",
-        "updatedAt": "1771264138842"
+        "updatedAt": "1784076376400"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -10622,7 +10694,8 @@
       ],
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png"
     },
     {
       "id": "3317",
@@ -10644,7 +10717,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
         "websiteUrl": "https://aws.amazon.com/",
         "createdAt": "1770746255969",
-        "updatedAt": "1771264138842"
+        "updatedAt": "1784076376400"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -10714,7 +10787,8 @@
       ],
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png"
     },
     {
       "id": "3315",
@@ -10736,7 +10810,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
         "websiteUrl": "https://aws.amazon.com/",
         "createdAt": "1770746255969",
-        "updatedAt": "1771264138842"
+        "updatedAt": "1784076376400"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -10768,7 +10842,8 @@
       ],
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png"
     },
     {
       "id": "3277",
@@ -10893,7 +10968,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/antimetal-logo.png",
         "websiteUrl": "https://antimetal.com",
         "createdAt": "1774157947608",
-        "updatedAt": "1774560618025"
+        "updatedAt": "1784076358157"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -11076,7 +11151,9 @@
           "sourceUrl": "https://github.com/tavily-ai/tavily-cursor-plugin/blob/b971db016d23a908fe7061fdeb213f9b6cb4d771/commands/tavily-best-practices.md"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/tavily-logo.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "3131",
@@ -11130,7 +11207,8 @@
           "sourceUrl": "https://github.com/team-plain/cursor-plugin-mcp/blob/c6f8a060e013dd3eea8460982221595699b47e3d/.mcp.json"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "2911",
@@ -11221,7 +11299,8 @@
       "curatedCategoryKeys": [
         "PRODUCTIVITY"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/miro.png"
     },
     {
       "id": "2804",
@@ -11246,7 +11325,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/circle-logo.png",
         "websiteUrl": "https://www.circle.com/",
         "createdAt": "1773951230799",
-        "updatedAt": "1774295767064"
+        "updatedAt": "1784076404118"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -11544,7 +11623,8 @@
       "curatedCategoryKeys": [
         "PRODUCTIVITY"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/svelte-logo.png"
     },
     {
       "id": "2050",
@@ -11711,7 +11791,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/cisco-thousand-eyes.png",
         "websiteUrl": "https://cisco.com",
         "createdAt": "1773528634836",
-        "updatedAt": "1773557715127"
+        "updatedAt": "1784076407001"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -11732,7 +11812,8 @@
           "sourceUrl": "https://github.com/thousandeyes/thousandeyes-ai-agents-toolkit/blob/3f638e4b7d42459646cb2a4fe626addff0f0811a/.mcp.json"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "2046",
@@ -11757,7 +11838,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/braintrust.png",
         "websiteUrl": "https://braintrust.dev/",
         "createdAt": "1773528757809",
-        "updatedAt": "1774157973873"
+        "updatedAt": "1784076392290"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -11806,7 +11887,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/azure-cosmos-db.png",
         "websiteUrl": "https://azure.microsoft.com/en-us/products/cosmos-db",
         "createdAt": "1773528712444",
-        "updatedAt": "1773689501558"
+        "updatedAt": "1784076378787"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -11924,7 +12005,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/datadog.png",
         "websiteUrl": "https://www.datadoghq.com/",
         "createdAt": "1773171765654",
-        "updatedAt": "1773270488671"
+        "updatedAt": "1784076471051"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -11989,7 +12070,8 @@
             "description": "Select the MCP server domain for your org based on the [site guide](https://docs.datadoghq.com/getting_started/site/#access-the-datadog-site)"
           }
         }
-      }
+      },
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/datadog.png"
     },
     {
       "id": "1410",
@@ -12100,7 +12182,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/render-logo.png",
         "websiteUrl": "https://render.com/",
         "createdAt": "1773111751654",
-        "updatedAt": "1773530267369"
+        "updatedAt": "1784149506096"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -12425,7 +12507,8 @@
       "curatedCategoryKeys": [
         "PRODUCTIVITY"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/meta.png"
     },
     {
       "id": "1292",
@@ -12509,7 +12592,9 @@
           "sourcePath": "plugins/cursor/commands/snyk-fix.md",
           "sourceUrl": "https://github.com/snyk/studio-recipes/blob/786986df7330e975b1c35f995b0650171438120d/plugins/cursor/commands/snyk-fix.md"
         }
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/snyk.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "1291",
@@ -12821,7 +12906,7 @@
       "description": "Cursor plugin for Box — search, read, and manage content in Box, and leverage Box AI for Q&A, summarization, and extraction via the Box MCP server.",
       "status": "PLUGIN_STATUS_APPROVED",
       "repositoryUrl": "https://github.com/box-community/cursor-box-plugin",
-      "logoUrl": "https://cursor-cdn.com/plugin-logos/production/e2a715739c3f4444.png",
+      "logoUrl": "https://cursor-cdn.com/plugin-logos/production/bb3c80081bf5db9d.png",
       "isPublished": true,
       "createdAt": "1772767501976",
       "updatedAt": "1775075985190",
@@ -12837,7 +12922,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/box-logo.png",
         "websiteUrl": "https://box.com",
         "createdAt": "1772766730030",
-        "updatedAt": "1773082752731"
+        "updatedAt": "1784076390589"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -13151,7 +13236,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/etoro-logo.png",
         "websiteUrl": "https://etoro.com",
         "createdAt": "1772615210839",
-        "updatedAt": "1773037742946"
+        "updatedAt": "1784076481352"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -13229,7 +13314,9 @@
           "sourcePath": ".mcp.json",
           "sourceUrl": "https://github.com/eToro-Public/etoro-cursor-plugin/blob/a18e511a7226df46a9a7587c6ce92582c3592ab2/.mcp.json"
         }
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/etoro-logo.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "800",
@@ -13506,7 +13593,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/amplitude-2x.png",
         "websiteUrl": "https://amplitude.com/",
         "createdAt": "1770354095087",
-        "updatedAt": "1771264211121"
+        "updatedAt": "1784076356813"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -13689,7 +13776,8 @@
       "curatedCategoryKeys": [
         "DATA_ANALYTICS"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/amplitude-2x.png"
     },
     {
       "id": "768",
@@ -13714,7 +13802,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/1password.png",
         "websiteUrl": "https://1password.com",
         "createdAt": "1772490153834",
-        "updatedAt": "1772569204117"
+        "updatedAt": "1784076343440"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -13735,7 +13823,8 @@
           "sourcePath": "hooks/hooks.json",
           "sourceUrl": "https://github.com/1Password/cursor-plugin/blob/19f19b82010a84e6c1601fde48bfbc8d6932f8c8/hooks/hooks.json"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "764",
@@ -13805,7 +13894,8 @@
           "sourceUrl": "https://github.com/semgrep/cursor-plugin/blob/a6931d7f59d1f5aa8324f341c0fa3ca3026df318/.mcp.json"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "curatedCategoryKeys": []
     },
     {
       "id": "762",
@@ -13884,7 +13974,8 @@
       "curatedCategoryKeys": [
         "PRODUCTIVITY"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/zapier-logo-2.png"
     },
     {
       "id": "761",
@@ -13985,7 +14076,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/endor-labs.png",
         "websiteUrl": "https://www.endorlabs.com",
         "createdAt": "1772483572110",
-        "updatedAt": "1773094557814"
+        "updatedAt": "1784076479354"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -14014,7 +14105,9 @@
           "sourceUrl": "https://github.com/endorlabs/ai-plugins/blob/0f454a7dc2d80b88cbbbcf252ada6322a9120b0b/skills/endor-upgrade-impact/SKILL.md"
         }
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/endor-labs.png",
+      "curatedCategoryKeys": []
     },
     {
       "id": "741",
@@ -14093,7 +14186,8 @@
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/planetscale.png"
     },
     {
       "id": "739",
@@ -14482,7 +14576,8 @@
       ],
       "curatedCategoryKeys": [
         "DATA_ANALYTICS"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/hugging-face.png"
     },
     {
       "id": "734",
@@ -15567,7 +15662,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/clickhouse.png",
         "websiteUrl": "https://clickhouse.com",
         "createdAt": "1771887276892",
-        "updatedAt": "1772049837391"
+        "updatedAt": "1784076409278"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -15666,7 +15761,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/atlassian.png",
         "websiteUrl": "https://atlassian.com",
         "createdAt": "1771877262901",
-        "updatedAt": "1772049822575"
+        "updatedAt": "1784076373679"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -15755,7 +15850,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/clerk.png",
         "websiteUrl": "https://clerk.com/",
         "createdAt": "1771632131843",
-        "updatedAt": "1772049805157"
+        "updatedAt": "1784076408255"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -16065,7 +16160,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -16103,7 +16198,8 @@
           "sourcePath": "continual-learning/hooks/hooks.json",
           "sourceUrl": "https://github.com/cursor/plugins/blob/e46364b8be46000b7df0f260550cd712afbb8d36/continual-learning/hooks/hooks.json"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "698",
@@ -16246,7 +16342,7 @@
         "verifiedAt": "1771435651306",
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/superpower-speed.png",
         "createdAt": "1771357902214",
-        "updatedAt": "1771435651308"
+        "updatedAt": "1784074848254"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -16386,7 +16482,8 @@
       "curatedCategoryKeys": [
         "AGENT_ORCHESTRATION"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/superpower-speed.png"
     },
     {
       "id": "680",
@@ -16409,7 +16506,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/every-2x.png",
         "websiteUrl": "https://every.to/",
         "createdAt": "1770994344895",
-        "updatedAt": "1771264055174"
+        "updatedAt": "1784076483225"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -16590,7 +16687,8 @@
       ],
       "curatedCategoryKeys": [
         "AGENT_ORCHESTRATION"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/every-2x.png"
     },
     {
       "id": "677",
@@ -16611,7 +16709,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -16763,7 +16861,8 @@
           "sourcePath": "cursor-team-kit/rules/typescript-exhaustive-switch.mdc",
           "sourceUrl": "https://github.com/cursor/plugins/blob/e46364b8be46000b7df0f260550cd712afbb8d36/cursor-team-kit/rules/typescript-exhaustive-switch.mdc"
         }
-      ]
+      ],
+      "curatedCategoryKeys": []
     },
     {
       "id": "676",
@@ -16789,7 +16888,7 @@
         "logoUrl": "https://1fhccwatggllrv9j.public.blob.vercel-storage.com/publisher-logos/browserbase.svg",
         "websiteUrl": "https://www.browserbase.com/",
         "createdAt": "1771294882574",
-        "updatedAt": "1775580123788"
+        "updatedAt": "1784076394775"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -16843,7 +16942,7 @@
         "logoUrl": "https://1fhccwatggllrv9j.public.blob.vercel-storage.com/publisher-logos/browserbase.svg",
         "websiteUrl": "https://www.browserbase.com/",
         "createdAt": "1771294882574",
-        "updatedAt": "1775580123788"
+        "updatedAt": "1784076394775"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -16934,7 +17033,8 @@
         "FEATURED",
         "PRODUCTIVITY"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/slack-2x.png"
     },
     {
       "id": "669",
@@ -17158,7 +17258,8 @@
       "curatedCategoryKeys": [
         "DATA_ANALYTICS"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/snowflake-2x.png"
     },
     {
       "id": "652",
@@ -17319,7 +17420,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
         "websiteUrl": "https://aws.amazon.com/",
         "createdAt": "1770746255969",
-        "updatedAt": "1771264138842"
+        "updatedAt": "1784076376400"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -17381,7 +17482,8 @@
       ],
       "curatedCategoryKeys": [
         "INFRASTRUCTURE"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png"
     },
     {
       "id": "649",
@@ -17676,7 +17778,7 @@
         "ownerTeamId": 1,
         "websiteUrl": "https://cursor.com/",
         "createdAt": "1770765942776",
-        "updatedAt": "1771307365526"
+        "updatedAt": "1784076468125"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -17995,7 +18097,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/browserstack-2x.png",
         "websiteUrl": "https://www.browserstack.com/",
         "createdAt": "1770747390109",
-        "updatedAt": "1771264127831"
+        "updatedAt": "1784076396201"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -18175,7 +18277,8 @@
       ],
       "curatedCategoryKeys": [
         "PAYMENTS"
-      ]
+      ],
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/stripe-parallelogram.png"
     },
     {
       "id": "407",
@@ -18201,7 +18304,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/cloudflare-2x.png",
         "websiteUrl": "https://www.cloudflare.com/",
         "createdAt": "1770351676322",
-        "updatedAt": "1771264229013"
+        "updatedAt": "1784076410517"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -18393,7 +18496,8 @@
       "curatedCategoryKeys": [
         "AGENT_ORCHESTRATION"
       ],
-      "variables": {}
+      "variables": {},
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/upstash-2x.png"
     },
     {
       "id": "404",
@@ -18880,7 +18984,7 @@
         "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/convex-2x.png",
         "websiteUrl": "https://www.convex.dev/",
         "createdAt": "1770445760617",
-        "updatedAt": "1771264190194"
+        "updatedAt": "1784076416108"
       },
       "marketplaceId": "34",
       "marketplace": {
@@ -19107,7 +19211,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "SECURITY"
       ],
       "skills": [
         {
@@ -19204,7 +19308,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -19267,9 +19371,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [
         {
           "name": "endor-setup",
@@ -19312,7 +19414,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -19376,7 +19478,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -19437,16 +19539,20 @@
       "gitRef": "d0676ea9bba52b0f97d810dade775de059ccd2bd",
       "repositoryUrl": "https://www.apollo.io/",
       "publisher": {
-        "name": "Apollo.io",
-        "displayName": "Apollo.io"
+        "id": "780",
+        "name": "apollo-io",
+        "displayName": "Apollo.io",
+        "ownerTeamId": 2205029,
+        "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/apollo-logo-2.png",
+        "websiteUrl": "https://apollo.io",
+        "createdAt": "1782959570931",
+        "updatedAt": "1784076361685"
       },
       "marketplace": {
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [
         {
           "name": "analytics",
@@ -19481,7 +19587,7 @@
         "skipped_files": [],
         "license_file": "LICENSE"
       },
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.apollo.io&sz=128"
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/apollo-logo-2.png"
     },
     {
       "id": "apollo-skills",
@@ -19501,7 +19607,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -19597,7 +19703,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -19687,7 +19793,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -19851,7 +19957,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -20077,7 +20183,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -20127,7 +20233,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -20183,7 +20289,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -20225,9 +20331,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [
         {
           "name": "agent-onboarding",
@@ -20346,7 +20450,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [],
       "commands": [],
@@ -20381,7 +20485,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -20549,7 +20653,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -20596,7 +20700,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -20676,7 +20780,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -20727,7 +20831,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -20795,7 +20899,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -21011,7 +21115,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "PRODUCTIVITY"
       ],
       "skills": [
         {
@@ -21105,7 +21209,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "SECURITY"
       ],
       "skills": [
         {
@@ -21257,7 +21361,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "MONITORING"
       ],
       "skills": [],
       "commands": [],
@@ -21288,7 +21392,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -21451,7 +21555,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -21737,9 +21841,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [
         {
           "name": "airflow",
@@ -21901,7 +22003,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -22023,7 +22125,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -22102,7 +22204,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -22261,7 +22363,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "PRODUCTIVITY"
       ],
       "skills": [
         {
@@ -22325,7 +22427,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -22397,7 +22499,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "SECURITY"
       ],
       "skills": [
         {
@@ -22567,7 +22669,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -22712,9 +22814,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [
         {
           "name": "falco",
@@ -22824,9 +22924,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [
         {
           "name": "fiftyone-app-playwright",
@@ -22944,7 +23042,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -23106,7 +23204,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "PRODUCTIVITY"
       ],
       "skills": [
         {
@@ -23218,7 +23316,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "PRODUCTIVITY"
       ],
       "skills": [
         {
@@ -23304,7 +23402,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -23374,7 +23472,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "MONITORING"
       ],
       "skills": [],
       "commands": [],
@@ -23441,7 +23539,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -23515,7 +23613,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -23559,7 +23657,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "PRODUCTIVITY"
       ],
       "skills": [
         {
@@ -23623,7 +23721,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "LOCATION"
       ],
       "skills": [
         {
@@ -23862,7 +23960,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -23914,7 +24012,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -23961,7 +24059,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -24000,9 +24098,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [
         {
           "name": "api-discovery",
@@ -24047,9 +24143,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [],
       "commands": [
         {
@@ -24101,7 +24195,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -24200,7 +24294,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -24384,7 +24478,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -24454,7 +24548,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "PRODUCTIVITY"
       ],
       "skills": [
         {
@@ -24538,7 +24632,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -24704,9 +24798,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [
         {
           "name": "postiz",
@@ -24874,7 +24966,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -24942,7 +25034,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -24985,7 +25077,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -25073,7 +25165,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [],
       "commands": [],
@@ -25149,9 +25241,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [
         {
           "name": "remember",
@@ -25189,7 +25279,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -25265,7 +25355,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "MONITORING"
       ],
       "skills": [
         {
@@ -25421,7 +25511,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DESIGN"
       ],
       "skills": [
         {
@@ -25556,7 +25646,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [],
       "commands": [],
@@ -25596,7 +25686,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -25659,7 +25749,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [],
       "commands": [],
@@ -25766,9 +25856,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [],
       "commands": [],
       "mcpServers": [
@@ -25806,7 +25894,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -25959,7 +26047,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -25994,7 +26082,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "PRODUCTIVITY"
       ],
       "skills": [
         {
@@ -26121,7 +26209,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -26205,7 +26293,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -26320,7 +26408,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -26368,7 +26456,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "SECURITY"
       ],
       "skills": [
         {
@@ -26426,7 +26514,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "SECURITY"
       ],
       "skills": [
         {
@@ -26484,7 +26572,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATABASE"
       ],
       "skills": [
         {
@@ -26524,7 +26612,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "PRODUCTIVITY"
       ],
       "skills": [
         {
@@ -26577,9 +26665,7 @@
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
-      "curatedCategoryKeys": [
-        "Claude Plugins Official"
-      ],
+      "curatedCategoryKeys": [],
       "skills": [
         {
           "name": "site-specification",
@@ -26630,7 +26716,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "PRODUCTIVITY"
       ],
       "skills": [
         {
@@ -26694,7 +26780,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -26860,15 +26946,21 @@
       "gitRef": "b836604c5474f245c4dfc0ed610cd9dfcfeee35e",
       "repositoryUrl": "https://www.zoominfo.com",
       "publisher": {
-        "name": "ZoomInfo",
-        "displayName": "ZoomInfo"
+        "id": "777",
+        "name": "zoominfo",
+        "displayName": "ZoomInfo",
+        "ownerUserId": 359642415,
+        "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/zoominfo-logo-1.png",
+        "websiteUrl": "https://www.zoominfo.com/",
+        "createdAt": "1782946095902",
+        "updatedAt": "1782946095902"
       },
       "marketplace": {
         "name": "corepass-plugins",
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DATA_ANALYTICS"
       ],
       "skills": [
         {
@@ -26944,7 +27036,7 @@
         "skipped_files": [],
         "license_file": "LICENSE"
       },
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.zoominfo.com&sz=128"
+      "logoUrl": "https://cursor-cdn.com/plugin-logos/production/f37d81bdbdb295da.png"
     },
     {
       "id": "zyte-web-data",
@@ -26964,7 +27056,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "AUTOMATION"
       ],
       "skills": [
         {
@@ -27057,7 +27149,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
@@ -27130,7 +27222,7 @@
         "displayName": "Corepass Plugins"
       },
       "curatedCategoryKeys": [
-        "Claude Plugins Official"
+        "DEVELOPMENT"
       ],
       "skills": [
         {
