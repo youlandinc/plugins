@@ -1,0 +1,56 @@
+{
+  "name": "corepass-plugins",
+  "owner": {
+    "name": "Corepass",
+    "email": "plugins@corepass.com"
+  },
+  "metadata": {
+    "description": "Vendored Corepass Code plugins, installable with `harness marketplace add`",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "slack",
+      "source": "./plugins/slack",
+      "displayName": "Slack",
+      "description": "Slack integration for searching messages, sending communications, managing canvases, and more",
+      "category": "productivity",
+      "featured": true,
+      "_provenance": {
+        "upstream": "https://github.com/slackapi/slack-skills-plugin",
+        "fork": "https://github.com/youlandinc/slack-skills-plugin",
+        "sha": "e75b0cf18f1a19f3fd629e3af9565ee84b8c2ce0",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "figma",
+      "source": "./plugins/figma",
+      "displayName": "Figma",
+      "description": "Plugin that includes the Figma MCP server and Skills for common workflows",
+      "category": "productivity",
+      "featured": true,
+      "_provenance": {
+        "upstream": "https://github.com/figma/mcp-server-guide",
+        "fork": "https://github.com/youlandinc/mcp-server-guide",
+        "sha": "07316dd2920d61303ca0e52812b31f5f341e7b15",
+        "license": null,
+        "terms": "https://www.figma.com/legal/developer-terms/",
+        "notice": "./plugins/figma/NOTICE.md"
+      }
+    },
+    {
+      "name": "superpowers",
+      "source": "./plugins/superpowers",
+      "displayName": "Superpowers",
+      "description": "Core skills library: TDD, debugging, collaboration patterns, and proven techniques",
+      "category": "agent-orchestration",
+      "_provenance": {
+        "upstream": "https://github.com/obra/superpowers",
+        "fork": "https://github.com/youlandinc/superpowers",
+        "sha": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9",
+        "license": "MIT"
+      }
+    }
+  ]
+}
