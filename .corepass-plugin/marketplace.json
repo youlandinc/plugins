@@ -22,6 +22,19 @@
         "sha": "e75b0cf18f1a19f3fd629e3af9565ee84b8c2ce0",
         "license": "MIT"
       }
+    },
+    {
+      "name": "superpowers",
+      "source": "./plugins/superpowers",
+      "displayName": "Superpowers",
+      "description": "Core skills library: TDD, debugging, collaboration patterns, and proven techniques",
+      "category": "agent-orchestration",
+      "_provenance": {
+        "upstream": "https://github.com/obra/superpowers",
+        "fork": "https://github.com/youlandinc/superpowers",
+        "sha": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9",
+        "license": "MIT"
+      }
     }
   ]
 }
