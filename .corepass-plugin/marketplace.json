@@ -1,0 +1,27 @@
+{
+  "name": "corepass-plugins",
+  "owner": {
+    "name": "Corepass",
+    "email": "plugins@corepass.com"
+  },
+  "metadata": {
+    "description": "Vendored Corepass Code plugins, installable with `harness marketplace add`",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "slack",
+      "source": "./plugins/slack",
+      "displayName": "Slack",
+      "description": "Slack integration for searching messages, sending communications, managing canvases, and more",
+      "category": "productivity",
+      "featured": true,
+      "_provenance": {
+        "upstream": "https://github.com/slackapi/slack-skills-plugin",
+        "fork": "https://github.com/youlandinc/slack-skills-plugin",
+        "sha": "e75b0cf18f1a19f3fd629e3af9565ee84b8c2ce0",
+        "license": "MIT"
+      }
+    }
+  ]
+}
