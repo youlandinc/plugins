@@ -56,6 +56,12 @@ plugins/
     skills/<name>/SKILL.md
     commands/*.md
     LICENSE
+  figma/
+    .corepass-plugin/plugin.json
+    .mcp.json
+    skills/<name>/SKILL.md
+    Figma Icon (Full-color).svg
+    NOTICE.md                       # no upstream LICENSE — see Licensing below
   superpowers/
     .corepass-plugin/plugin.json
     .claude-plugin/plugin.json
@@ -71,6 +77,7 @@ Install them:
 ```bash
 harness marketplace add https://github.com/youlandinc/plugins --name corepass-plugins
 harness plugin install slack@corepass-plugins
+harness plugin install figma@corepass-plugins
 harness plugin install superpowers@corepass-plugins
 ```
 
@@ -106,10 +113,19 @@ another repo is therefore not possible; the files have to live here.
 
 ### Licensing
 
-A plugin can only be vendored here if it ships a license that permits
-redistribution — both plugins above are MIT, and each keeps its `LICENSE` file
-alongside its files. A plugin with **no** license file (or proprietary terms)
-must stay on the catalog track only, where nothing is copied and the user clones
-from the vendor's own repo. `figma` is the live example: `figma/mcp-server-guide`
-ships no `LICENSE`, and its README places the skills under the Figma Developer
-Terms, so it cannot be vendored.
+`slack` and `superpowers` are MIT and each keeps its `LICENSE` file alongside its
+files — the normal case.
+
+`figma` is the exception and is flagged as such: `figma/mcp-server-guide` ships
+**no** `LICENSE` (GitHub reports `license: null`) and its README places the
+skills under the [Figma Developer Terms](https://www.figma.com/legal/developer-terms/)
+as a Beta feature. It is vendored anyway, because the marketplace track has no
+way to list a plugin without a copy in this repo, and the status is recorded in
+[`plugins/figma/NOTICE.md`](plugins/figma/NOTICE.md) plus `license: null` in its
+`_provenance`. Nothing there is relicensed.
+
+If that copy ever has to go, the catalog track is the drop-in replacement: it
+stores git coordinates only and the user clones from Figma's own repo, so the
+plugin stays installable. Prefer catalog-only for any future plugin without a
+redistributable license — vendor it only when the marketplace listing is
+genuinely needed, and add a `NOTICE.md` when you do.
