@@ -1,0 +1,12 @@
+{
+  "name": "sfranalytics",
+  "displayName": "SFR Analytics",
+  "description": "SFR property data + AI — screen deals, research buyers, analyze markets in seconds.",
+  "version": "0.1.0",
+  "author": {
+    "name": "SFR Analytics",
+    "url": "https://www.sfranalytics.com"
+  },
+  "homepage": "https://www.sfranalytics.com",
+  "keywords": ["real-estate", "property", "rental-comps", "market-analysis", "mcp"]
+}

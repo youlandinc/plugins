@@ -40,6 +40,13 @@
       }
     },
     {
+      "name": "sfranalytics",
+      "source": "./plugins/sfranalytics",
+      "displayName": "SFR Analytics",
+      "description": "SFR property data + AI — screen deals, research buyers, analyze markets in seconds.",
+      "category": "data-analytics"
+    },
+    {
       "name": "superpowers",
       "source": "./plugins/superpowers",
       "displayName": "Superpowers",

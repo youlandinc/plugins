@@ -62,6 +62,9 @@ plugins/
     skills/<name>/SKILL.md
     Figma Icon (Full-color).svg
     NOTICE.md                       # no upstream LICENSE — see Licensing below
+  sfranalytics/
+    .corepass-plugin/plugin.json      # authored here, not vendored
+    .mcp.json                         # one hosted MCP server, no other components
   superpowers/
     .corepass-plugin/plugin.json
     .claude-plugin/plugin.json
@@ -78,6 +81,7 @@ Install them:
 harness marketplace add https://github.com/youlandinc/plugins --name corepass-plugins
 harness plugin install slack@corepass-plugins
 harness plugin install figma@corepass-plugins
+harness plugin install sfranalytics@corepass-plugins
 harness plugin install superpowers@corepass-plugins
 ```
 
@@ -110,6 +114,15 @@ another repo is therefore not possible; the files have to live here.
    `.corepass-plugin/plugin.json` says `"hooks": "./hooks/hooks.json"`.
 5. Add the entry to `.corepass-plugin/marketplace.json`, recording the fork and
    the exact vendored `sha` under `_provenance`.
+
+Not every entry is vendored from somewhere. A vendor that ships only a hosted MCP
+endpoint and no plugin repository (`sfranalytics`) gets its manifest and
+`.mcp.json` authored here instead, and carries **no** `_provenance` — there is no
+upstream commit to pin, and nothing to re-sync. Steps 1 and 2 simply do not
+apply; `version` in such a manifest tracks our packaging, not the vendor's API.
+
+This is also the only way to list a hosted-only connector at all: the catalog
+track requires a git `source.url`, which such a vendor does not have.
 
 ### Licensing
 
