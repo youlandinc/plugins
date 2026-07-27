@@ -44,7 +44,8 @@
       "source": "./plugins/sfranalytics",
       "displayName": "SFR Analytics",
       "description": "SFR property data + AI — screen deals, research buyers, analyze markets in seconds.",
-      "category": "data-analytics"
+      "category": "data-analytics",
+      "logoUrl": "https://raw.githubusercontent.com/youlandinc/plugins/main/plugins/sfranalytics/logo.svg"
     },
     {
       "name": "linear",
