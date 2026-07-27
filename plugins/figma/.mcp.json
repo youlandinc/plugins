@@ -3,6 +3,9 @@
     "figma": {
       "type": "http",
       "url": "https://mcp.figma.com/mcp",
+      "oauth": {
+        "clientId": "uJPKZN8ojMRuHSMmpt6tTc"
+      },
       "_meta": {
         "ideToolIconPath": "./Figma Icon (Mono-line black, tight).svg",
         "ideToolIconRendersAsTemplate": true,
