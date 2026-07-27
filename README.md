@@ -65,6 +65,7 @@ plugins/
   sfranalytics/
     .corepass-plugin/plugin.json      # authored here, not vendored
     .mcp.json                         # one hosted MCP server, no other components
+    logo.svg                          # fetched from sfranalytics.com/icons/logo.svg
   linear/
     .corepass-plugin/plugin.json      # canonical manifest (ours)
     .cursor-plugin/plugin.json        # upstream manifest, kept as-is

@@ -27,6 +27,11 @@ repo** — SFR Analytics ships no plugin repository, only a hosted endpoint. The
 manifest and `.mcp.json` above are authored here, which is why the marketplace
 entry carries no `_provenance`: there is no upstream commit to pin.
 
+`logo.svg` is the one exception — fetched as a single asset from
+<https://sfranalytics.com/icons/logo.svg> (their own site nav logo), not part of
+any vendored repo or commit, so it doesn't get a `_provenance` entry either.
+Re-fetch it by hand if SFR Analytics ever changes their branding.
+
 ## Authentication
 
 Browser-based OAuth against SFR Analytics, handled at connect time — there is no

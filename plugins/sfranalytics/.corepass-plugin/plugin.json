@@ -8,5 +8,6 @@
     "url": "https://www.sfranalytics.com"
   },
   "homepage": "https://www.sfranalytics.com",
-  "keywords": ["real-estate", "property", "rental-comps", "market-analysis", "mcp"]
+  "keywords": ["real-estate", "property", "rental-comps", "market-analysis", "mcp"],
+  "logo": "./logo.svg"
 }
