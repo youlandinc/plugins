@@ -47,6 +47,20 @@
       "category": "data-analytics"
     },
     {
+      "name": "linear",
+      "source": "./plugins/linear",
+      "displayName": "Linear",
+      "description": "Linear integration for AI assistants to manage issues, projects, and documents across your Linear workspace",
+      "category": "productivity",
+      "_provenance": {
+        "upstream": "https://github.com/linear/cursor-plugin",
+        "fork": "https://github.com/youlandinc/cursor-plugin",
+        "sha": "c2c4cb2ab23206c9219b0dd31c9571e4c922faeb",
+        "license": null,
+        "notice": "./plugins/linear/NOTICE.md"
+      }
+    },
+    {
       "name": "superpowers",
       "source": "./plugins/superpowers",
       "displayName": "Superpowers",

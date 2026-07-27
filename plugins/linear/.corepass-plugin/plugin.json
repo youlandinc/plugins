@@ -1,0 +1,13 @@
+{
+  "name": "linear",
+  "displayName": "Linear",
+  "description": "Linear integration for AI assistants to manage issues, projects, and documents across your Linear workspace",
+  "version": "1.0.0",
+  "author": {
+    "name": "Linear",
+    "email": "support@linear.app",
+    "url": "https://linear.app"
+  },
+  "homepage": "https://linear.app",
+  "keywords": ["linear", "mcp", "issues", "project-management", "productivity"]
+}

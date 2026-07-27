@@ -65,6 +65,12 @@ plugins/
   sfranalytics/
     .corepass-plugin/plugin.json      # authored here, not vendored
     .mcp.json                         # one hosted MCP server, no other components
+  linear/
+    .corepass-plugin/plugin.json      # canonical manifest (ours)
+    .cursor-plugin/plugin.json        # upstream manifest, kept as-is
+    .mcp.json                         # ours — translated from upstream's mcp.json
+    logo.svg
+    NOTICE.md                       # no upstream LICENSE — see Licensing below
   superpowers/
     .corepass-plugin/plugin.json
     .claude-plugin/plugin.json
@@ -82,6 +88,7 @@ harness marketplace add https://github.com/youlandinc/plugins --name corepass-pl
 harness plugin install slack@corepass-plugins
 harness plugin install figma@corepass-plugins
 harness plugin install sfranalytics@corepass-plugins
+harness plugin install linear@corepass-plugins
 harness plugin install superpowers@corepass-plugins
 ```
 
@@ -129,13 +136,16 @@ track requires a git `source.url`, which such a vendor does not have.
 `slack` and `superpowers` are MIT and each keeps its `LICENSE` file alongside its
 files — the normal case.
 
-`figma` is the exception and is flagged as such: `figma/mcp-server-guide` ships
-**no** `LICENSE` (GitHub reports `license: null`) and its README places the
+`figma` and `linear` are the exceptions and are flagged as such: neither
+`figma/mcp-server-guide` nor `linear/cursor-plugin` ships a `LICENSE` (GitHub
+reports `license: null` for both). Figma's README additionally places its
 skills under the [Figma Developer Terms](https://www.figma.com/legal/developer-terms/)
-as a Beta feature. It is vendored anyway, because the marketplace track has no
-way to list a plugin without a copy in this repo, and the status is recorded in
-[`plugins/figma/NOTICE.md`](plugins/figma/NOTICE.md) plus `license: null` in its
-`_provenance`. Nothing there is relicensed.
+as a Beta feature. Both are vendored anyway, because the marketplace track has
+no way to list a plugin without a copy in this repo, and each status is
+recorded in its own `NOTICE.md`
+([`plugins/figma/NOTICE.md`](plugins/figma/NOTICE.md),
+[`plugins/linear/NOTICE.md`](plugins/linear/NOTICE.md)) plus `license: null` in
+its `_provenance`. Nothing there is relicensed.
 
 If that copy ever has to go, the catalog track is the drop-in replacement: it
 stores git coordinates only and the user clones from Figma's own repo, so the
