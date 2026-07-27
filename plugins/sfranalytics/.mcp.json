@@ -3,10 +3,7 @@
     "sfranalytics": {
       "type": "http",
       "url": "https://mcp.sfranalytics.com/mcp",
-      "route": "local",
-      "oauth": {
-        "clientId": ""
-      }
+      "route": "local"
     }
   }
 }
