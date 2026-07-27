@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sfranalytics": {
+      "type": "http",
+      "url": "https://mcp.sfranalytics.com/mcp"
+    }
+  }
+}
