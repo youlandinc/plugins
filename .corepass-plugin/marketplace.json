@@ -73,6 +73,17 @@
         "sha": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9",
         "license": "MIT"
       }
+    },
+    {
+      "name": "microsoft365",
+      "source": "./plugins/microsoft365",
+      "displayName": "Microsoft 365",
+      "description": "Microsoft 365 integration — Outlook email, calendar, OneDrive, and SharePoint through the Microsoft Graph API.",
+      "category": "productivity",
+      "_provenance": {
+        "upstream": "https://github.com/softeria/ms-365-mcp-server",
+        "license": "MIT"
+      }
     }
   ]
 }

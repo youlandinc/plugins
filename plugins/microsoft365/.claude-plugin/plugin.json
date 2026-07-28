@@ -1,0 +1,12 @@
+{
+  "name": "microsoft365",
+  "description": "Microsoft 365 integration — Outlook email, calendar, OneDrive, and SharePoint through the Microsoft Graph API",
+  "version": "1.0.0",
+  "author": {
+    "name": "Softeria",
+    "url": "https://github.com/softeria/ms-365-mcp-server"
+  },
+  "homepage": "https://github.com/softeria/ms-365-mcp-server",
+  "license": "MIT",
+  "keywords": ["microsoft365", "office365", "outlook", "email", "calendar", "onedrive", "sharepoint", "teams", "mcp", "graph"]
+}

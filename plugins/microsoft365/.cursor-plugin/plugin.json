@@ -1,0 +1,9 @@
+{
+  "name": "microsoft365",
+  "description": "Microsoft 365 MCP server. Access Outlook email, calendar, OneDrive, and SharePoint through MCP-compatible clients.",
+  "version": "1.0.0",
+  "mcpServers": "../.mcp.json",
+  "author": {
+    "name": "Softeria"
+  }
+}
