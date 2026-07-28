@@ -1,0 +1,15 @@
+{
+  "name": "atlassian",
+  "displayName": "Atlassian",
+  "description": "Atlassian integration — connect Jira, Confluence, and Compass to search, create, and manage your work, plus skills for triage, backlogs, status reports, and sprint dashboards",
+  "version": "1.1.3",
+  "author": {
+    "name": "Atlassian",
+    "url": "https://atlassian.com"
+  },
+  "homepage": "https://github.com/atlassian/atlassian-mcp-server",
+  "repository": "https://github.com/atlassian/atlassian-mcp-server",
+  "license": "Apache-2.0",
+  "keywords": ["atlassian", "mcp", "rovo", "jira", "confluence", "compass", "skills"],
+  "logo": "assets/logo.svg"
+}

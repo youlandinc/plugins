@@ -84,6 +84,18 @@
         "upstream": "https://github.com/softeria/ms-365-mcp-server",
         "license": "MIT"
       }
+    },
+    {
+      "name": "atlassian",
+      "source": "./plugins/atlassian",
+      "displayName": "Atlassian",
+      "description": "Atlassian integration — connect Jira, Confluence, and Compass to search, create, and manage your work, plus skills for triage, backlogs, status reports, and sprint dashboards.",
+      "category": "productivity",
+      "_provenance": {
+        "upstream": "https://github.com/atlassian/atlassian-mcp-server",
+        "sha": "94a30436435fb526a29f820f5f46250870eb75a0",
+        "license": "Apache-2.0"
+      }
     }
   ]
 }
