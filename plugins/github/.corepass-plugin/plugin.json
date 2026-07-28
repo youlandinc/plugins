@@ -1,0 +1,15 @@
+{
+  "name": "github",
+  "displayName": "GitHub",
+  "description": "GitHub integration — connect AI assistants to GitHub to manage repositories, issues, pull requests, and workflows through natural language, via the remote GitHub MCP server",
+  "version": "1.7.0",
+  "author": {
+    "name": "GitHub",
+    "url": "https://github.com"
+  },
+  "homepage": "https://github.com/github/github-mcp-server",
+  "repository": "https://github.com/github/github-mcp-server",
+  "license": "MIT",
+  "keywords": ["github", "mcp", "git", "repositories", "issues", "pull-requests", "actions", "developer-tools"],
+  "logo": "assets/logo.svg"
+}

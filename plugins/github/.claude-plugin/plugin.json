@@ -1,0 +1,10 @@
+{
+  "name": "github",
+  "displayName": "GitHub",
+  "description": "Connect AI assistants to GitHub — manage repositories, issues, pull requests, and workflows through natural language.",
+  "version": "1.7.0",
+  "author": {
+    "name": "GitHub"
+  },
+  "mcpServers": "./.mcp.json"
+}

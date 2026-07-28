@@ -96,6 +96,18 @@
         "sha": "94a30436435fb526a29f820f5f46250870eb75a0",
         "license": "Apache-2.0"
       }
+    },
+    {
+      "name": "github",
+      "source": "./plugins/github",
+      "displayName": "GitHub",
+      "description": "GitHub integration — manage repositories, issues, pull requests, and workflows through natural language, via the remote GitHub MCP server.",
+      "category": "developer-tools",
+      "_provenance": {
+        "upstream": "https://github.com/github/github-mcp-server",
+        "sha": "eb088dfe9d854dab6453a8d4ae5871a5ced20974",
+        "license": "MIT"
+      }
     }
   ]
 }
