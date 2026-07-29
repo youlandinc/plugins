@@ -115,6 +115,13 @@
       "displayName": "Notion",
       "description": "Notion integration — search, read, create, and update pages, databases, and comments across your Notion workspace via the remote Notion MCP server.",
       "category": "productivity"
+    },
+    {
+      "name": "gmail",
+      "source": "./plugins/gmail",
+      "displayName": "Gmail",
+      "description": "Gmail integration — search, read, and compose email in your Gmail account via the remote Gmail MCP server.",
+      "category": "productivity"
     }
   ]
 }

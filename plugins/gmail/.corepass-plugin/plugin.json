@@ -1,0 +1,13 @@
+{
+  "name": "gmail",
+  "displayName": "Gmail",
+  "description": "Gmail integration — search, read, and compose email in your Gmail account via the remote Gmail MCP server.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Google",
+    "url": "https://www.google.com"
+  },
+  "homepage": "https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server",
+  "keywords": ["gmail", "mcp", "email", "google", "workspace", "productivity"],
+  "logo": "./logo.svg"
+}
