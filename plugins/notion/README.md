@@ -15,8 +15,7 @@ One MCP server, nothing else — no skills, commands, agents or hooks:
   "mcpServers": {
     "notion": {
       "type": "http",
-      "url": "https://mcp.notion.com/mcp",
-      "route": "local"
+      "url": "https://mcp.notion.com/mcp"
     }
   }
 }
@@ -33,10 +32,8 @@ tracks *our* packaging of the connector, not Notion's API.
 ## Authentication
 
 Notion MCP requires **user-based OAuth** and does not support bearer-token
-authentication, so the flow runs locally at connect time — hence
-`"route": "local"` and no `auth` block or `${ENV}` header placeholders. There is
-no API key to paste. The same local-OAuth shape as the `linear` and
-`sfranalytics` servers here.
+authentication, so the flow runs in the browser at connect time — no `auth`
+block or `${ENV}` header placeholders, and no API key to paste.
 
 ## Upgrading this entry
 
