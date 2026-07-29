@@ -4,7 +4,8 @@
       "type": "http",
       "url": "https://mcp.figma.com/mcp",
       "oauth": {
-        "clientId": "uJPKZN8ojMRuHSMmpt6tTc"
+        "clientId": "uJPKZN8ojMRuHSMmpt6tTc",
+        "callbackPort": 3118
       },
       "_meta": {
         "ideToolIconPath": "./Figma Icon (Mono-line black, tight).svg",
