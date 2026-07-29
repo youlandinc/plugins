@@ -1,0 +1,13 @@
+{
+  "name": "notion",
+  "displayName": "Notion",
+  "description": "Notion integration — search, read, create, and update pages, databases, and comments across your Notion workspace via the remote Notion MCP server.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Notion",
+    "url": "https://www.notion.so"
+  },
+  "homepage": "https://developers.notion.com/guides/mcp",
+  "keywords": ["notion", "mcp", "notes", "docs", "databases", "wiki", "productivity"],
+  "logo": "./logo.svg"
+}
