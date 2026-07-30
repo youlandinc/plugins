@@ -5,7 +5,8 @@
       "url": "https://gmailmcp.googleapis.com/mcp/v1",
       "oauth": {
         "clientId": "752782911539-8c82le89qbla3me0o1u5kcretpbtjf41.apps.googleusercontent.com",
-        "callbackPort": 3118
+        "callbackPort": 3118,
+        "authorizeParams": { "access_type": "offline", "prompt": "consent" }
       }
     }
   }
