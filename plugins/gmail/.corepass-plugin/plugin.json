@@ -9,5 +9,5 @@
   },
   "homepage": "https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server",
   "keywords": ["gmail", "mcp", "email", "google", "workspace", "productivity"],
-  "logo": "./logo.svg"
+  "logo": "./logo.png"
 }
