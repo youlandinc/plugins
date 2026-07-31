@@ -1,17 +1,21 @@
 {
   "name": "cloudflare",
   "displayName": "Cloudflare",
-  "description": "Cloudflare integration — search Cloudflare docs, manage Workers bindings (D1, KV, R2, Hyperdrive), inspect Workers builds, and query Workers logs and analytics.",
+  "description": "Cloudflare developer platform — 11 skills covering Workers, Durable Objects, the Agents SDK, Wrangler, Cloudflare One and web performance, plus five remote MCP servers for the API, docs, Workers bindings, builds and observability.",
   "version": "0.1.0",
   "author": {
     "name": "Cloudflare",
     "url": "https://cloudflare.com"
   },
   "homepage": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+  "repository": "https://github.com/youlandinc/plugins",
   "keywords": [
     "cloudflare",
     "mcp",
     "workers",
+    "durable-objects",
+    "agents-sdk",
+    "wrangler",
     "d1",
     "kv",
     "r2",

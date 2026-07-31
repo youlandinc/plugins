@@ -134,16 +134,31 @@ track requires a git `source.url`, which such a vendor does not have.
 
 ### Hosted-only DCR connectors
 
-`sentry`, `context7`, `exa`, `vercel`, `cloudflare`, `neon`, `supabase`,
-`stripe` and `asana` are all that shape — three files each
-(`.corepass-plugin/plugin.json`, `.mcp.json`, `README.md`), nothing vendored, no
-`_provenance`, no `LICENSE` question to answer.
+`sentry`, `context7`, `exa`, `vercel`, `neon`, `supabase`, `stripe` and `asana`
+are all that shape — three files each (`.corepass-plugin/plugin.json`,
+`.mcp.json`, `README.md`), nothing vendored, no `_provenance`, no `LICENSE`
+question to answer.
 
-`datadog` uses the same DCR endpoint style but is **not** in that group: Datadog
-ships a real plugin repo, so it vendors adapted Apache-2.0 skills and carries a
-`LICENSE`, a `NOTICE` stating the modifications, and `_provenance`. See
-[`plugins/datadog/README.md`](plugins/datadog/README.md) for what had to change
-and why a straight copy does not work here.
+`cloudflare` and `datadog` use the same DCR endpoint style but are **not** in
+that group — each vendor ships a real plugin repo, so both carry a `LICENSE`, a
+`NOTICE` and `_provenance`. They also show the two ends of the vendoring
+spectrum, which is the useful comparison when adding the next one:
+
+- [`cloudflare`](plugins/cloudflare/README.md) is a **straight copy** of
+  `cloudflare/skills` — 11 skills and 2 commands, unmodified. Its skills teach how
+  to build on Cloudflare, so they carry no client-specific server ids or config
+  paths and need no adapting.
+- [`datadog`](plugins/datadog/README.md) had to be **adapted**. Its upstream
+  skills are client plumbing: they address the server by Cursor's id and rewrite a
+  registration file whose templating we do not honor. Copied verbatim they would
+  have sent the agent editing a file that changes nothing.
+
+Read a candidate's skills before deciding which case it is. Two things decide it:
+whether the skills name a client-specific server id or config path, and whether
+any skill declares `allowed-tools` — that one becomes a real `tool_allowlist`
+here, and Claude Code's PascalCase tool names do not match ours, so it would
+block every tool the skill needs. (A *command*'s `allowed-tools` is display-only
+and harmless.)
 
 They need no credential of any kind because each provider advertises **RFC 7591
 dynamic client registration**, so the client mints its own public PKCE client

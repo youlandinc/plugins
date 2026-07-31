@@ -1,0 +1,45 @@
+Cloudflare Skills
+Copyright Cloudflare, Inc.
+
+Vendored from https://github.com/cloudflare/skills at commit 30553f89,
+licensed under Apache-2.0 (see LICENSE).
+
+Vendored UNMODIFIED
+===================
+
+`skills/` (11 skills and their `references/`), `commands/` (2 commands),
+`LICENSE`, `logo.svg`, and `.claude-plugin/plugin.json` are copied byte-for-byte.
+Unlike `plugins/datadog`, nothing here needed adapting: these skills teach how to
+build on Cloudflare (Workers, Durable Objects, Agents SDK, Wrangler, web
+performance) rather than how to configure an MCP client, so they carry no
+client-specific server ids, config paths, or UI instructions. No skill declares
+`allowed-tools`, so none of them narrows the tool list on load.
+
+Added by Corepass
+=================
+
+- `.corepass-plugin/plugin.json` — our manifest. Upstream's omits `displayName`,
+  which the storefront needs, so the plugin would otherwise render as the bare
+  slug `cloudflare`.
+- `.mcp.json` — REPLACED, not copied. Same five servers and URLs as upstream at
+  this commit; rewritten only so this file stays ours to edit.
+- `README.md` — ours, describing the packaging.
+
+Not vendored
+============
+
+- `.github/` (Semgrep workflow), `CODEOWNERS`, `.gitignore` — repository tooling,
+  excluded per this repo's "leave CI and build tooling behind" rule.
+- `.cursor-plugin/` — Cursor's manifest and marketplace index; our loader probes
+  `.corepass-plugin` then `.claude-plugin`, so it would never be read.
+- `rules/workers.mdc` — a Cursor `.mdc` rule file. Corepass has no `rules`
+  component, so it would be inert here.
+- Upstream's `README.md` — replaced with ours rather than kept alongside.
+
+Note on the two commands: their frontmatter carries
+`allowed-tools: [Read, Glob, Grep, Bash, Write, Edit, WebFetch]`, which are Claude
+Code's tool names, not ours (`read_file`, `glob`, `grep`, `run_command`,
+`write_file`, `edit_file`, `web_fetch`). This is harmless — `CommandEntry`
+surfaces `allowed_tools` to the inventory for display only and never enforces it
+as a tool allowlist, unlike a skill's `allowed-tools`, which does become a real
+`tool_allowlist`. Left verbatim so the copy stays diffable against upstream.

@@ -1,94 +1,80 @@
 # Cloudflare
 
-Cloudflare integration — search Cloudflare docs, manage Workers bindings (D1, KV, R2, Hyperdrive), inspect Workers builds, and query Workers logs and analytics.
+Cloudflare developer platform — 11 skills covering Workers, Durable Objects, the
+Agents SDK, Wrangler, Cloudflare One and web performance, plus five remote MCP
+servers for the API, docs, Workers bindings, builds and observability.
 
 - Docs: <https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/>
-- Endpoints: 4 Streamable HTTP servers (see below)
+- Upstream: [`cloudflare/skills`](https://github.com/cloudflare/skills) @ `30553f89` (Apache-2.0)
 
-## What this plugin is
+## The five MCP servers
 
-4 MCP servers, nothing else — no skills, commands, agents or hooks:
-
-```json
-{
-  "mcpServers": {
-    "cloudflare-docs": {
-      "type": "http",
-      "url": "https://docs.mcp.cloudflare.com/mcp"
-    },
-    "cloudflare-bindings": {
-      "type": "http",
-      "url": "https://bindings.mcp.cloudflare.com/mcp"
-    },
-    "cloudflare-builds": {
-      "type": "http",
-      "url": "https://builds.mcp.cloudflare.com/mcp"
-    },
-    "cloudflare-observability": {
-      "type": "http",
-      "url": "https://observability.mcp.cloudflare.com/mcp"
-    }
-  }
-}
-```
-
-Like `sfranalytics` and `notion`, this directory is **not vendored from an
-upstream repo** — Cloudflare ships a hosted MCP endpoint, not a plugin
-repository. The manifest and `.mcp.json` above are authored here, which is why
-the marketplace entry carries no `_provenance`: there is no upstream commit to
-pin.
-
-## The four servers
-
-Cloudflare splits its MCP surface by capability, and this plugin ships the four
-that matter for app work. They are independent endpoints, not one server with
-four modes:
+Cloudflare splits its MCP surface by capability. These are independent endpoints,
+not one server in five modes:
 
 | Server | Endpoint | Auth |
 |---|---|---|
+| `cloudflare-api` | `mcp.cloudflare.com/mcp` | OAuth (DCR) |
 | `cloudflare-docs` | `docs.mcp.cloudflare.com/mcp` | none — answers `initialize` anonymously |
 | `cloudflare-bindings` | `bindings.mcp.cloudflare.com/mcp` | OAuth (DCR) |
 | `cloudflare-builds` | `builds.mcp.cloudflare.com/mcp` | OAuth (DCR) |
 | `cloudflare-observability` | `observability.mcp.cloudflare.com/mcp` | OAuth (DCR) |
 
-`cloudflare-docs` needs no connect step at all; the other three drive the
-browser OAuth flow off their 401. Cloudflare runs more servers than these four
-(Radar, Browser Rendering, AI Gateway, Container, …); add them as further
-entries in the same `mcpServers` map when they are wanted.
+Cloudflare runs more servers than these five (Radar, Browser Rendering, AI
+Gateway, Container, …); add them to the same `mcpServers` map when wanted.
+
+## Skills and commands
+
+Eleven skills, vendored unmodified:
+
+| Skill | Covers |
+|---|---|
+| `cloudflare` | Umbrella skill with per-product references (AI Gateway, AI Search, Analytics Engine, …) |
+| `workers-best-practices` | Workers idioms and pitfalls |
+| `wrangler` | The CLI — retrieval-first, because baked-in flag knowledge goes stale |
+| `durable-objects` | Durable Objects |
+| `agents-sdk` | Agents SDK, with references for MCP, streaming, human-in-the-loop, workflows |
+| `sandbox-sdk` | Sandbox SDK |
+| `cloudflare-email-service` | Email sending, routing, deliverability |
+| `cloudflare-one` / `cloudflare-one-migrations` | Zero Trust and migrations |
+| `web-perf` | Web performance |
+| `turnstile-spin` | Turnstile |
+
+Plus two commands: `/build-agent` and `/build-mcp`.
 
 ## Authentication
 
-Browser-based OAuth at connect time, with **no credential to configure** — no
-API key to paste, no client id, no client secret. Cloudflare advertises RFC 7591
-**dynamic client registration** (`https://bindings.mcp.cloudflare.com/register`), so the client
-registers its own public PKCE client during the first authorization.
+Browser-based OAuth at connect time on the four gated servers, with **no
+credential to configure**. Each advertises RFC 7591 dynamic client registration
+(`https://mcp.cloudflare.com/register` and the per-subdomain equivalents), so the
+client mints its own public PKCE client on first authorization. `cloudflare-docs`
+answers `initialize` anonymously and needs no connect step at all.
 
-That is why `.mcp.json` is a bare URL — see below.
+Configs are a bare `{type, url}`. No `route: "local"` — that key asserts the
+provider's DCR/authorize flow accepts *only* a loopback `redirect_uri`, which has
+not been established for Cloudflare, and it would be inert on the plugin path
+regardless (`plugin_mcp.to_config_dict` drops it).
 
-## Why the config is just a URL
+## Vendoring notes
 
-A connector that supports DCR has no static client id to declare — it mints one
-per authorization — so there is nothing to put in an `oauth` block. Writing
-`"oauth": {"clientId": ""}` to satisfy a non-empty check would be a field that
-will never hold a value.
+This is a straight copy, in contrast to [`plugins/datadog`](../datadog/README.md),
+which had to be adapted. The difference is what the skills are *about*:
+Cloudflare's teach how to build on Cloudflare, so they contain no client-specific
+server ids, no config-file paths, and no UI instructions. None declares
+`allowed-tools`, so none of them narrows the tool list when it loads — worth
+checking on any future upstream bump, since a skill's `allowed-tools` becomes a
+real `tool_allowlist` here and Claude Code's PascalCase tool names would not match
+ours.
 
-There is no `route: "local"` either, unlike `linear` and `sfranalytics`. That
-key asserts something specific about the provider: that its DCR/authorize flow
-accepts *only* a loopback `redirect_uri`, so edge's hosted HTTPS callback can
-never complete the handoff. That was established for sfranalytics; it has not
-been established for this connector, and the key is not a generic "uses DCR"
-marker. (It would also be inert here — `plugin_mcp.to_config_dict` drops
-`route`, so it reaches neither `connector_needs_auth` nor the renderer's
-`entryHasAuthBlock`.)
-
-The connect path does not need either key. `mcpConfigCanUseLocalOAuth` gates the
-Connect control on a URL with no `headers` / `headersHelper`, and the remote's
-401 drives RFC 9728/8414 discovery and DCR from there — the same way `notion`
-connects today.
+`.mcp.json` is the one file replaced rather than copied: same five servers and
+URLs as upstream at this commit, rewritten so it stays ours to edit. Excluded:
+`.github/`, `CODEOWNERS`, `.gitignore`, `.cursor-plugin/`, and `rules/workers.mdc`
+(a Cursor `.mdc` file — Corepass has no `rules` component). Full statement in
+[`NOTICE`](NOTICE).
 
 ## Upgrading this entry
 
-The endpoint is a live service, so there is no sha to bump — `version` tracks
-*our* packaging of the connector, not Cloudflare's API. Bump it when the config
-here changes (a new URL, an added server, an `auth` block), not when Cloudflare
-ships new tools.
+Re-pull upstream and re-diff `skills/` and `commands/` when its sha moves, then
+bump `_provenance.sha` in the marketplace index. Check two things on every bump:
+whether `.mcp.json` gained or lost a server, and whether any skill picked up an
+`allowed-tools` line. Bump `version` when *our* packaging changes.

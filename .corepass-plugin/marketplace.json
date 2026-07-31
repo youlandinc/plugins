@@ -155,8 +155,15 @@
       "name": "cloudflare",
       "source": "./plugins/cloudflare",
       "displayName": "Cloudflare",
-      "description": "Cloudflare integration — search Cloudflare docs, manage Workers bindings (D1, KV, R2, Hyperdrive), inspect Workers builds, and query Workers logs and analytics.",
-      "category": "infrastructure"
+      "description": "Cloudflare developer platform — 11 skills covering Workers, Durable Objects, the Agents SDK, Wrangler, Cloudflare One and web performance, plus five remote MCP servers for the API, docs, Workers bindings, builds and observability.",
+      "category": "infrastructure",
+      "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/cloudflare-2x.png",
+      "_provenance": {
+        "upstream": "https://github.com/cloudflare/skills",
+        "sha": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+        "license": "Apache-2.0",
+        "notice": "./plugins/cloudflare/NOTICE"
+      }
     },
     {
       "name": "neon",
