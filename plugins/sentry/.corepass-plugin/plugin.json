@@ -1,0 +1,19 @@
+{
+  "name": "sentry",
+  "displayName": "Sentry",
+  "description": "Sentry integration — query issues, errors, traces, and releases across your Sentry organization, and run Seer root-cause analysis, via the remote Sentry MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Sentry",
+    "url": "https://sentry.io"
+  },
+  "homepage": "https://docs.sentry.io/product/sentry-mcp/",
+  "keywords": [
+    "sentry",
+    "mcp",
+    "errors",
+    "monitoring",
+    "observability",
+    "tracing"
+  ]
+}

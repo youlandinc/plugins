@@ -1,0 +1,19 @@
+{
+  "name": "context7",
+  "displayName": "Context7",
+  "description": "Context7 integration — pull version-accurate documentation and code examples for any library straight into the model's context, instead of relying on stale training data.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Upstash",
+    "url": "https://upstash.com"
+  },
+  "homepage": "https://context7.com",
+  "keywords": [
+    "context7",
+    "mcp",
+    "documentation",
+    "libraries",
+    "reference",
+    "development"
+  ]
+}

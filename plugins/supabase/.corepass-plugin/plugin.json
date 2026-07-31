@@ -1,0 +1,19 @@
+{
+  "name": "supabase",
+  "displayName": "Supabase",
+  "description": "Supabase integration — manage projects, run SQL and migrations, inspect logs, generate types, and search Supabase docs, via the remote Supabase MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Supabase",
+    "url": "https://supabase.com"
+  },
+  "homepage": "https://supabase.com/docs/guides/getting-started/mcp",
+  "keywords": [
+    "supabase",
+    "mcp",
+    "postgres",
+    "database",
+    "backend",
+    "migrations"
+  ]
+}

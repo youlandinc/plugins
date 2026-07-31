@@ -122,6 +122,69 @@
       "displayName": "Gmail",
       "description": "Gmail integration — search, read, and compose email in your Gmail account via the remote Gmail MCP server.",
       "category": "productivity"
+    },
+    {
+      "name": "sentry",
+      "source": "./plugins/sentry",
+      "displayName": "Sentry",
+      "description": "Sentry integration — query issues, errors, traces, and releases across your Sentry organization, and run Seer root-cause analysis, via the remote Sentry MCP server.",
+      "category": "monitoring"
+    },
+    {
+      "name": "context7",
+      "source": "./plugins/context7",
+      "displayName": "Context7",
+      "description": "Context7 integration — pull version-accurate documentation and code examples for any library straight into the model's context, instead of relying on stale training data.",
+      "category": "development"
+    },
+    {
+      "name": "exa",
+      "source": "./plugins/exa",
+      "displayName": "Exa",
+      "description": "Exa integration — neural web search, page-content retrieval, and deep research built for agents, via the remote Exa MCP server.",
+      "category": "development"
+    },
+    {
+      "name": "vercel",
+      "source": "./plugins/vercel",
+      "displayName": "Vercel",
+      "description": "Vercel integration — inspect projects and deployments, read build and runtime logs, and search Vercel documentation, via the remote Vercel MCP server.",
+      "category": "infrastructure"
+    },
+    {
+      "name": "cloudflare",
+      "source": "./plugins/cloudflare",
+      "displayName": "Cloudflare",
+      "description": "Cloudflare integration — search Cloudflare docs, manage Workers bindings (D1, KV, R2, Hyperdrive), inspect Workers builds, and query Workers logs and analytics.",
+      "category": "infrastructure"
+    },
+    {
+      "name": "neon",
+      "source": "./plugins/neon",
+      "displayName": "Neon",
+      "description": "Neon integration — create and manage serverless Postgres projects, run SQL, and drive branch-based schema migrations, via the remote Neon MCP server.",
+      "category": "database"
+    },
+    {
+      "name": "supabase",
+      "source": "./plugins/supabase",
+      "displayName": "Supabase",
+      "description": "Supabase integration — manage projects, run SQL and migrations, inspect logs, generate types, and search Supabase docs, via the remote Supabase MCP server.",
+      "category": "database"
+    },
+    {
+      "name": "stripe",
+      "source": "./plugins/stripe",
+      "displayName": "Stripe",
+      "description": "Stripe integration — read and manage customers, products, prices, invoices, subscriptions, and disputes, and search Stripe documentation, via the remote Stripe MCP server.",
+      "category": "payments"
+    },
+    {
+      "name": "asana",
+      "source": "./plugins/asana",
+      "displayName": "Asana",
+      "description": "Asana integration — search and manage tasks, projects, portfolios, and goals, and post updates across your Asana workspace, via the remote Asana MCP server.",
+      "category": "productivity"
     }
   ]
 }

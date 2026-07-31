@@ -1,0 +1,19 @@
+{
+  "name": "stripe",
+  "displayName": "Stripe",
+  "description": "Stripe integration — read and manage customers, products, prices, invoices, subscriptions, and disputes, and search Stripe documentation, via the remote Stripe MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Stripe",
+    "url": "https://stripe.com"
+  },
+  "homepage": "https://docs.stripe.com/mcp",
+  "keywords": [
+    "stripe",
+    "mcp",
+    "payments",
+    "billing",
+    "subscriptions",
+    "invoices"
+  ]
+}

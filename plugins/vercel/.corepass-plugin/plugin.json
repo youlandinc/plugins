@@ -1,0 +1,19 @@
+{
+  "name": "vercel",
+  "displayName": "Vercel",
+  "description": "Vercel integration — inspect projects and deployments, read build and runtime logs, and search Vercel documentation, via the remote Vercel MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Vercel",
+    "url": "https://vercel.com"
+  },
+  "homepage": "https://vercel.com/docs/mcp/vercel-mcp",
+  "keywords": [
+    "vercel",
+    "mcp",
+    "deployments",
+    "hosting",
+    "logs",
+    "infrastructure"
+  ]
+}

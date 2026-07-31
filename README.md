@@ -132,6 +132,56 @@ apply; `version` in such a manifest tracks our packaging, not the vendor's API.
 This is also the only way to list a hosted-only connector at all: the catalog
 track requires a git `source.url`, which such a vendor does not have.
 
+### Hosted-only DCR connectors
+
+`sentry`, `context7`, `exa`, `vercel`, `cloudflare`, `neon`, `supabase`,
+`stripe` and `asana` are all that shape — three files each
+(`.corepass-plugin/plugin.json`, `.mcp.json`, `README.md`), nothing vendored, no
+`_provenance`, no `LICENSE` question to answer.
+
+`datadog` uses the same DCR endpoint style but is **not** in that group: Datadog
+ships a real plugin repo, so it vendors adapted Apache-2.0 skills and carries a
+`LICENSE`, a `NOTICE` stating the modifications, and `_provenance`. See
+[`plugins/datadog/README.md`](plugins/datadog/README.md) for what had to change
+and why a straight copy does not work here.
+
+They need no credential of any kind because each provider advertises **RFC 7591
+dynamic client registration**, so the client mints its own public PKCE client
+during the first authorization. Before adding another one, verify all three of
+these against the live endpoint rather than trusting a vendor doc:
+
+1. **Discovery** — `client_engine.discover_oauth_metadata(url)` returns a
+   `registration_endpoint` (RFC 9728 → RFC 8414/OIDC).
+2. **Open registration** — a real `POST` to that endpoint returns `200`/`201`
+   with a `client_id`. An advertised endpoint is not necessarily an open one:
+   Figma advertises `api.figma.com/v1/oauth/mcp/register` and answers `403`,
+   which is exactly why `plugins/figma` ships a static `clientId` instead.
+3. **The endpoint answers `initialize`** — a `401` carrying
+   `WWW-Authenticate: Bearer … resource_metadata=…` is the healthy result for a
+   gated server, and confirms the URL is right rather than a 404 in disguise.
+
+Every server in this batch is a bare `{"type": "http", "url": …}` — the same
+shape as `notion`. **Do not add `route: "local"` to a new DCR connector.** That
+key is not a "uses DCR" marker; it asserts that the provider's DCR/authorize
+flow accepts *only* a loopback `redirect_uri`, so edge's hosted HTTPS callback
+can never complete the handoff. That was established for `sfranalytics`
+specifically. Write it when you have verified it for that provider, not because
+the connector happens to use DCR.
+
+It would not do anything here in any case: `plugin_mcp.to_config_dict` drops
+`route`, so on the plugin path it reaches neither `connector_needs_auth` nor the
+renderer's `entryHasAuthBlock`, and its one live consumer `oauth_provider_id`
+already returns `None` for a config carrying no `oauth` / `provider` /
+`server_id`.
+
+Nothing is needed to make connect work: `mcpConfigCanUseLocalOAuth` gates the
+Connect control on a URL with no `headers` / `headersHelper`, and the remote's
+401 drives discovery and DCR from there.
+
+Logos are still missing for this batch: none of these ten has a `logo.*`, and
+their marketplace entries carry no `logoUrl`, so the storefront falls back to
+whatever it shows for `notion` / `linear` / `atlassian` today.
+
 ### Licensing
 
 `slack` and `superpowers` are MIT and each keeps its `LICENSE` file alongside its

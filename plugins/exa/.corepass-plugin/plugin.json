@@ -1,0 +1,19 @@
+{
+  "name": "exa",
+  "displayName": "Exa",
+  "description": "Exa integration — neural web search, page-content retrieval, and deep research built for agents, via the remote Exa MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Exa",
+    "url": "https://exa.ai"
+  },
+  "homepage": "https://docs.exa.ai/reference/exa-mcp",
+  "keywords": [
+    "exa",
+    "mcp",
+    "search",
+    "web",
+    "research",
+    "crawl"
+  ]
+}

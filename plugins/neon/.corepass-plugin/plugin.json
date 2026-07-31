@@ -1,0 +1,19 @@
+{
+  "name": "neon",
+  "displayName": "Neon",
+  "description": "Neon integration — create and manage serverless Postgres projects, run SQL, and drive branch-based schema migrations, via the remote Neon MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Neon",
+    "url": "https://neon.com"
+  },
+  "homepage": "https://neon.com/docs/ai/neon-mcp-server",
+  "keywords": [
+    "neon",
+    "mcp",
+    "postgres",
+    "database",
+    "serverless",
+    "branching"
+  ]
+}
