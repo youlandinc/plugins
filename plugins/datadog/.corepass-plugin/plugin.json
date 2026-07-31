@@ -1,0 +1,21 @@
+{
+  "name": "datadog",
+  "displayName": "Datadog",
+  "description": "Datadog integration — query metrics, logs, traces, monitors, dashboards, and incidents through Bits AI's remote MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Datadog",
+    "url": "https://www.datadoghq.com"
+  },
+  "homepage": "https://docs.datadoghq.com/bits_ai/mcp_server/",
+  "repository": "https://github.com/youlandinc/plugins",
+  "keywords": [
+    "datadog",
+    "mcp",
+    "metrics",
+    "logs",
+    "apm",
+    "monitoring",
+    "incidents"
+  ]
+}

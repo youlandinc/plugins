@@ -1,0 +1,36 @@
+Datadog Cursor Plugin
+Copyright 2026-present Datadog, Inc.
+
+This product includes software developed at Datadog (https://www.datadoghq.com/).
+
+--------------------------------------------------------------------------------
+
+Modifications by Corepass
+=========================
+
+The skills under `skills/` are derived from `datadog-labs/cursor-plugin`
+(https://github.com/datadog-labs/cursor-plugin) at commit 7136415, licensed
+under Apache-2.0, and have been MODIFIED. Per Apache-2.0 section 4(b) each
+modified file carries its own change notice; the changes as a set are:
+
+- The MCP server is addressed as `datadog__datadog` (tools
+  `mcp__datadog__datadog__*`) instead of Cursor's `plugin-datadog-datadog`.
+- The `.dd_cursor_mcp.json` registration file, its `${DD_MCP_DOMAIN:-…}` /
+  `${DD_MCP_TOOLSETS:-…}` shell-style templating, and every procedure that has
+  the agent read or rewrite that file have been removed. Corepass expands
+  `${VAR}` in request headers only, never in a server URL, and an agent cannot
+  reach an installed plugin's own directory (outside the workspace sandbox, and
+  `plugins/` is a reserved path in a managed root). Site and toolset changes are
+  therefore documented as user actions.
+- Cursor-specific UI instructions ("Developer: Reload Window", "Cursor Settings:
+  Tools & MCP") are replaced with Corepass equivalents.
+- `ddsetup`'s first-time setup procedure is dropped: this plugin ships a working
+  default endpoint, so the only remaining step is connecting the server.
+
+Upstream files vendored unmodified: `LICENSE`. The upstream `NOTICE` text is
+preserved verbatim above this separator.
+
+Not vendored: `.github/` (CI, release workflow, issue and PR templates,
+dependabot, CODEOWNERS), `CONTRIBUTING.md`, `.cursor-plugin/plugin.json` and
+`.dd_cursor_mcp.json` — repository tooling and Cursor-runtime files with no role
+in this marketplace copy.

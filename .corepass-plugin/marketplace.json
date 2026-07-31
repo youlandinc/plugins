@@ -185,6 +185,20 @@
       "displayName": "Asana",
       "description": "Asana integration — search and manage tasks, projects, portfolios, and goals, and post updates across your Asana workspace, via the remote Asana MCP server.",
       "category": "productivity"
+    },
+    {
+      "name": "datadog",
+      "source": "./plugins/datadog",
+      "displayName": "Datadog",
+      "description": "Datadog integration — query metrics, logs, traces, monitors, dashboards, and incidents through Bits AI's remote MCP server.",
+      "category": "monitoring",
+      "_provenance": {
+        "upstream": "https://github.com/datadog-labs/cursor-plugin",
+        "sha": "71364156c14b27466f3d646c8924318154e2321a",
+        "license": "Apache-2.0",
+        "notice": "./plugins/datadog/NOTICE",
+        "modified": true
+      }
     }
   ]
 }
