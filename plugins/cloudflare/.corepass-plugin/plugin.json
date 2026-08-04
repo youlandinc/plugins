@@ -1,7 +1,7 @@
 {
   "name": "cloudflare",
   "displayName": "Cloudflare",
-  "description": "Cloudflare developer platform — 11 skills covering Workers, Durable Objects, the Agents SDK, Wrangler, Cloudflare One and web performance, plus five remote MCP servers for the API, docs, Workers bindings, builds and observability.",
+  "description": "Cloudflare developer platform — 11 skills covering Workers, Durable Objects, the Agents SDK, Wrangler, Cloudflare One and web performance, plus four remote MCP servers for docs, Workers bindings, builds and observability.",
   "version": "0.1.0",
   "author": {
     "name": "Cloudflare",

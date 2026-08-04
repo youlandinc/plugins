@@ -1,27 +1,35 @@
 # Cloudflare
 
 Cloudflare developer platform — 11 skills covering Workers, Durable Objects, the
-Agents SDK, Wrangler, Cloudflare One and web performance, plus five remote MCP
-servers for the API, docs, Workers bindings, builds and observability.
+Agents SDK, Wrangler, Cloudflare One and web performance, plus four remote MCP
+servers for docs, Workers bindings, builds and observability.
 
 - Docs: <https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/>
 - Upstream: [`cloudflare/skills`](https://github.com/cloudflare/skills) @ `30553f89` (Apache-2.0)
 
-## The five MCP servers
+## The four MCP servers
 
 Cloudflare splits its MCP surface by capability. These are independent endpoints,
-not one server in five modes:
+not one server in four modes:
 
 | Server | Endpoint | Auth |
 |---|---|---|
-| `cloudflare-api` | `mcp.cloudflare.com/mcp` | OAuth (DCR) |
 | `cloudflare-docs` | `docs.mcp.cloudflare.com/mcp` | none — answers `initialize` anonymously |
 | `cloudflare-bindings` | `bindings.mcp.cloudflare.com/mcp` | OAuth (DCR) |
 | `cloudflare-builds` | `builds.mcp.cloudflare.com/mcp` | OAuth (DCR) |
 | `cloudflare-observability` | `observability.mcp.cloudflare.com/mcp` | OAuth (DCR) |
 
-Cloudflare runs more servers than these five (Radar, Browser Rendering, AI
-Gateway, Container, …); add them to the same `mcpServers` map when wanted.
+**This is a deliberate divergence from upstream.** `cloudflare/skills` declares a
+fifth server, `cloudflare-api` (`https://mcp.cloudflare.com/mcp`) — the
+account-wide API surface — and it is intentionally not enabled here. The endpoint
+itself is fine (verified: `401` with `WWW-Authenticate` + `resource_metadata`, DCR
+open at `mcp.cloudflare.com/register`), so re-adding it is a two-line change to
+`.mcp.json` if that decision is revisited. Because this diverges on purpose, an
+upstream bump must not blindly re-sync the server list — see "Upgrading this
+entry".
+
+Cloudflare runs more servers still (Radar, Browser Rendering, AI Gateway,
+Container, …); add them to the same `mcpServers` map when wanted.
 
 ## Skills and commands
 
@@ -66,8 +74,9 @@ checking on any future upstream bump, since a skill's `allowed-tools` becomes a
 real `tool_allowlist` here and Claude Code's PascalCase tool names would not match
 ours.
 
-`.mcp.json` is the one file replaced rather than copied: same five servers and
-URLs as upstream at this commit, rewritten so it stays ours to edit. Excluded:
+`.mcp.json` is the one file replaced rather than copied — same URLs as upstream at
+this commit but four servers instead of five, per the divergence noted above.
+Excluded:
 `.github/`, `CODEOWNERS`, `.gitignore`, `.cursor-plugin/`, and `rules/workers.mdc`
 (a Cursor `.mdc` file — Corepass has no `rules` component). Full statement in
 [`NOTICE`](NOTICE).
@@ -75,6 +84,15 @@ URLs as upstream at this commit, rewritten so it stays ours to edit. Excluded:
 ## Upgrading this entry
 
 Re-pull upstream and re-diff `skills/` and `commands/` when its sha moves, then
-bump `_provenance.sha` in the marketplace index. Check two things on every bump:
-whether `.mcp.json` gained or lost a server, and whether any skill picked up an
-`allowed-tools` line. Bump `version` when *our* packaging changes.
+bump `_provenance.sha` in the marketplace index. Check three things on every bump:
+
+1. Whether upstream's `.mcp.json` gained or lost a server — and **do not
+   blind-copy it**. Our list omits `cloudflare-api` on purpose, so a re-sync must
+   preserve that choice or explicitly reverse it.
+2. Whether any skill picked up an `allowed-tools` line. A skill's `allowed-tools`
+   becomes a real `tool_allowlist` here, and Claude Code's PascalCase tool names
+   would not match ours, blocking every tool the skill needs.
+3. Whether the skill bodies started naming a client-specific server id or config
+   path — the thing that forced `plugins/datadog` into an adaptation.
+
+Bump `version` when *our* packaging changes.

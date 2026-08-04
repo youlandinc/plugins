@@ -21,8 +21,10 @@ Added by Corepass
 - `.corepass-plugin/plugin.json` — our manifest. Upstream's omits `displayName`,
   which the storefront needs, so the plugin would otherwise render as the bare
   slug `cloudflare`.
-- `.mcp.json` — REPLACED, not copied. Same five servers and URLs as upstream at
-  this commit; rewritten only so this file stays ours to edit.
+- `.mcp.json` — REPLACED, not copied. Same URLs as upstream at this commit, but
+  FOUR servers rather than five: upstream's `cloudflare-api`
+  (`https://mcp.cloudflare.com/mcp`) is deliberately not enabled here. Rewritten
+  so this file stays ours to edit and so that divergence is explicit.
 - `README.md` — ours, describing the packaging.
 
 Not vendored
