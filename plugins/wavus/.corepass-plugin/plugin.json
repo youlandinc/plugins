@@ -1,0 +1,20 @@
+{
+  "name": "wavus",
+  "displayName": "Wavus",
+  "description": "Wavus integration — search for customers, companies, investors, and key decision-makers in one place, with natural-language prospect search, fit scoring, and data enrichment, via the remote Wavus MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Wavus",
+    "url": "https://www.wavus.ai"
+  },
+  "homepage": "https://www.wavus.ai/overview",
+  "keywords": [
+    "wavus",
+    "mcp",
+    "prospecting",
+    "investors",
+    "sales-intelligence",
+    "enrichment",
+    "capital-markets"
+  ]
+}

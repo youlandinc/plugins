@@ -206,6 +206,13 @@
         "notice": "./plugins/datadog/NOTICE",
         "modified": true
       }
+    },
+    {
+      "name": "wavus",
+      "source": "./plugins/wavus",
+      "displayName": "Wavus",
+      "description": "Wavus integration — search for customers, companies, investors, and key decision-makers in one place, with natural-language prospect search, fit scoring, and data enrichment, via the remote Wavus MCP server.",
+      "category": "data-analytics"
     }
   ]
 }
