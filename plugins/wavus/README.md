@@ -41,6 +41,14 @@ upstream repo** — Wavus ships a hosted MCP endpoint, not a plugin repository. 
 manifest and `.mcp.json` above are authored here, which is why the marketplace
 entry carries no `_provenance`: there is no upstream commit to pin.
 
+`logo.svg` is the one exception, and follows the same rule `sfranalytics` does:
+fetched as a single asset from <https://www.wavus.ai/favicon.svg> (the only logo
+the site exposes — there is no separate wordmark), not part of any vendored repo
+or commit, so it gets no `_provenance` entry either. Re-fetch it by hand if Wavus
+changes their branding. It is served to the storefront from this repo
+(`raw.githubusercontent.com/youlandinc/plugins/main/plugins/wavus/logo.svg`)
+rather than hotlinked, matching every other logo in the marketplace index.
+
 ## What Wavus does
 
 An AI intelligence platform for finding and reaching decision-makers — its own

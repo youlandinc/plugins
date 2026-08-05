@@ -8,6 +8,8 @@
     "url": "https://www.wavus.ai"
   },
   "homepage": "https://www.wavus.ai/overview",
+  "repository": "https://github.com/youlandinc/plugins",
+  "logo": "./logo.svg",
   "keywords": [
     "wavus",
     "mcp",
