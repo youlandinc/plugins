@@ -5,21 +5,32 @@ decision-makers in one place, with natural-language prospect search, fit scoring
 and data enrichment, via the remote Wavus MCP server.
 
 - Product: <https://www.wavus.ai/overview>
-- Endpoint: `https://mcp-dev.corepass.com/mcp` (Streamable HTTP) — **see the
-  warning below**
+- Endpoint: `https://mcp.corepass.com/mcp` (Streamable HTTP)
 
-## ⚠️ This points at a dev endpoint
+## ⚠️ Check port 443 before publishing
 
-`mcp-dev.corepass.com` is the **development** host. There is no production
-endpoint yet: `mcp.corepass.com` does not complete a TLS handshake as of
-2026-07-31.
+The URL above is the production host and is the right thing to ship. As of
+2026-07-31 it was **not yet serving TLS**, so verify before flipping the catalog
+row to `PUBLISHED`:
 
-That has a direct consequence for publishing. A catalog row for this entry sends
-every installer to a dev server, so keep it out of the published catalog until a
-prod host exists — insert it with `status = 'DRAFT'` rather than `'PUBLISHED'`
-(the `uc_plugin` default is already `DRAFT`), or hold the row entirely. When the
-prod endpoint lands, this is a one-line change to `.mcp.json` plus a `version`
-bump; nothing else here is dev-specific.
+- DNS resolves to `prod-mcp-service-alb-1470563753.us-west-1.elb.amazonaws.com`,
+  so the prod load balancer exists.
+- Port 80 answers, but **port 443 refuses the connection** and an HTTPS request
+  dies with `EOF occurred in violation of protocol` mid-handshake — the signature
+  of an ALB with no HTTPS listener or no certificate attached.
+
+Nothing in this directory can fix that; it is an infrastructure change. Until
+443 serves, keep the `uc_plugin` row at `status = 'DRAFT'` (already the column
+default) so installers are not pointed at an endpoint that cannot be reached.
+Once it is up, the only change needed is `DRAFT` → `PUBLISHED` — the URL here is
+already correct.
+
+A plain-`http://` fallback is **not** an option: this connector carries an OAuth
+bearer token, which must never cross the wire unencrypted.
+
+The previous `mcp-dev.corepass.com` host remains reachable and fully functional
+(401 + RFC 9728 metadata + open DCR) if a working endpoint is needed for testing
+in the meantime.
 
 ## What this plugin is
 
@@ -30,7 +41,7 @@ One MCP server, nothing else — no skills, commands, agents or hooks:
   "mcpServers": {
     "wavus": {
       "type": "http",
-      "url": "https://mcp-dev.corepass.com/mcp"
+      "url": "https://mcp.corepass.com/mcp"
     }
   }
 }
@@ -66,23 +77,30 @@ company/contact-intelligence group.
 
 Browser-based OAuth at connect time, with **no credential to configure** — no API
 key to paste, no client id, no client secret. The server advertises RFC 7591
-dynamic client registration (`https://mcp-dev.corepass.com/register`), so the
-client registers its own public PKCE client during the first authorization.
+dynamic client registration (`https://mcp.corepass.com/register`), so the client
+registers its own public PKCE client during the first authorization.
 
-Verified against the live endpoint:
+The behaviour below was verified against **`mcp-dev.corepass.com`**, the same
+service on the dev host. The prod host is expected to match, but has not been
+confirmed — it was not serving TLS at the time of writing (see the warning at the
+top), so re-check these three when 443 comes up:
 
 - `initialize` → `401` with
   `WWW-Authenticate: Bearer resource_metadata="…/.well-known/oauth-protected-resource/mcp"`
   (RFC 9728, correctly path-scoped)
 - Protected-resource metadata advertises
-  `scopes_supported: ["mcp:read", "offline_access"]` and
-  `authorization_servers: ["https://mcp-dev.corepass.com"]`
+  `scopes_supported: ["mcp:read", "mcp:write", "offline_access"]` and an
+  `authorization_servers` entry pointing back at the same host
 - DCR `POST /register` → `201` with a `client_id`
 
 Because the server advertises its scopes, the discovery fallback in
-`client_engine` picks up `mcp:read offline_access` on its own and no `oauth.scopes`
-needs declaring here. `offline_access` is what yields a refresh token, so
-`refresh_client_token` can rotate it rather than forcing a re-authorization.
+`client_engine` resolves them on its own and no `oauth.scopes` needs declaring
+here. `offline_access` is what yields a refresh token, so `refresh_client_token`
+can rotate it rather than forcing a re-authorization.
+
+(The advertised set grew from `mcp:read offline_access` to include `mcp:write`
+between two probes on 2026-07-31, so the surface is still moving — worth
+re-reading rather than trusting this list.)
 
 Notably this is the shape Datadog lacks — Datadog advertises no
 `scopes_supported`, which is how the empty-`scope=` authorize bug surfaced. Wavus
@@ -102,5 +120,6 @@ there.
 ## Upgrading this entry
 
 The endpoint is a live service, so there is no sha to bump — `version` tracks
-*our* packaging, not the Wavus API. The change to expect is the dev → prod host
-swap above.
+*our* packaging, not the Wavus API. The change still outstanding is the
+`DRAFT` → `PUBLISHED` flip once the prod host serves TLS; the URL itself is
+already pointing where it should.

@@ -2,7 +2,7 @@
   "mcpServers": {
     "wavus": {
       "type": "http",
-      "url": "https://mcp-dev.corepass.com/mcp"
+      "url": "https://mcp.corepass.com/mcp"
     }
   }
 }
