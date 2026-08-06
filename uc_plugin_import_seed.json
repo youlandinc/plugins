@@ -1,0 +1,29 @@
+{
+  "_purpose": "Hand-maintained input for user-center's admin-only POST /api/v1/plugins/import-catalog (additive-only sync, ADR 0011). Lists marketplace-track entries (plugins/<name> in this repo) that are not part of the generated 225-entry catalog_seed.json harvest, in the legacy flat gitUrl/gitRef/gitPath shape importCatalogEntry() also accepts. gitRef is a pinned 40-hex commit sha (not a branch), matching the shape already live for figma/slack/superpowers on dev.",
+  "plugins": [
+    {
+      "name": "sfranalytics",
+      "displayName": "SFR Analytics",
+      "description": "SFR property data + AI — screen deals, research buyers, analyze markets in seconds.",
+      "category": "data-analytics",
+      "gitUrl": "https://github.com/youlandinc/plugins",
+      "gitRef": "ceb5dfc3e51b95403ea39cb012560e91a981b35e",
+      "gitPath": "plugins/sfranalytics",
+      "mcpServers": [
+        { "name": "sfranalytics" }
+      ]
+    },
+    {
+      "name": "linear",
+      "displayName": "Linear",
+      "description": "Linear integration for AI assistants to manage issues, projects, and documents across your Linear workspace",
+      "category": "productivity",
+      "gitUrl": "https://github.com/youlandinc/plugins",
+      "gitRef": "ceb5dfc3e51b95403ea39cb012560e91a981b35e",
+      "gitPath": "plugins/linear",
+      "mcpServers": [
+        { "name": "linear" }
+      ]
+    }
+  ]
+}
