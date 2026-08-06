@@ -7,31 +7,6 @@ and data enrichment, via the remote Wavus MCP server.
 - Product: <https://www.wavus.ai/overview>
 - Endpoint: `https://mcp.corepass.com/mcp` (Streamable HTTP)
 
-## ⚠️ Check port 443 before publishing
-
-The URL above is the production host and is the right thing to ship. As of
-2026-07-31 it was **not yet serving TLS**, so verify before flipping the catalog
-row to `PUBLISHED`:
-
-- DNS resolves to `prod-mcp-service-alb-1470563753.us-west-1.elb.amazonaws.com`,
-  so the prod load balancer exists.
-- Port 80 answers, but **port 443 refuses the connection** and an HTTPS request
-  dies with `EOF occurred in violation of protocol` mid-handshake — the signature
-  of an ALB with no HTTPS listener or no certificate attached.
-
-Nothing in this directory can fix that; it is an infrastructure change. Until
-443 serves, keep the `uc_plugin` row at `status = 'DRAFT'` (already the column
-default) so installers are not pointed at an endpoint that cannot be reached.
-Once it is up, the only change needed is `DRAFT` → `PUBLISHED` — the URL here is
-already correct.
-
-A plain-`http://` fallback is **not** an option: this connector carries an OAuth
-bearer token, which must never cross the wire unencrypted.
-
-The previous `mcp-dev.corepass.com` host remains reachable and fully functional
-(401 + RFC 9728 metadata + open DCR) if a working endpoint is needed for testing
-in the meantime.
-
 ## What this plugin is
 
 One MCP server, nothing else — no skills, commands, agents or hooks:
@@ -80,17 +55,16 @@ key to paste, no client id, no client secret. The server advertises RFC 7591
 dynamic client registration (`https://mcp.corepass.com/register`), so the client
 registers its own public PKCE client during the first authorization.
 
-The behaviour below was verified against **`mcp-dev.corepass.com`**, the same
-service on the dev host. The prod host is expected to match, but has not been
-confirmed — it was not serving TLS at the time of writing (see the warning at the
-top), so re-check these three when 443 comes up:
+Verified against the live production endpoint (2026-07-31):
 
+- TLS 1.3 on both resolved ALB addresses, wildcard certificate for
+  `*.corepass.com`
 - `initialize` → `401` with
-  `WWW-Authenticate: Bearer resource_metadata="…/.well-known/oauth-protected-resource/mcp"`
-  (RFC 9728, correctly path-scoped)
-- Protected-resource metadata advertises
-  `scopes_supported: ["mcp:read", "mcp:write", "offline_access"]` and an
-  `authorization_servers` entry pointing back at the same host
+  `WWW-Authenticate: Bearer resource_metadata="https://mcp.corepass.com/.well-known/oauth-protected-resource/mcp"`
+  (RFC 9728, correctly path-scoped rather than origin-wide)
+- That metadata advertises
+  `scopes_supported: ["mcp:read", "mcp:write", "offline_access"]` and
+  `authorization_servers: ["https://mcp.corepass.com"]`
 - DCR `POST /register` → `201` with a `client_id`
 
 Because the server advertises its scopes, the discovery fallback in
@@ -98,9 +72,8 @@ Because the server advertises its scopes, the discovery fallback in
 here. `offline_access` is what yields a refresh token, so `refresh_client_token`
 can rotate it rather than forcing a re-authorization.
 
-(The advertised set grew from `mcp:read offline_access` to include `mcp:write`
-between two probes on 2026-07-31, so the surface is still moving — worth
-re-reading rather than trusting this list.)
+(The advertised set gained `mcp:write` between two probes on 2026-07-31, so the
+surface is still moving — worth re-reading rather than trusting this list.)
 
 Notably this is the shape Datadog lacks — Datadog advertises no
 `scopes_supported`, which is how the empty-`scope=` authorize bug surfaced. Wavus
@@ -120,6 +93,6 @@ there.
 ## Upgrading this entry
 
 The endpoint is a live service, so there is no sha to bump — `version` tracks
-*our* packaging, not the Wavus API. The change still outstanding is the
-`DRAFT` → `PUBLISHED` flip once the prod host serves TLS; the URL itself is
-already pointing where it should.
+*our* packaging, not the Wavus API. Bump it when the config here changes (a new
+URL, an added server, an `auth` block), not when Wavus ships new tools. The
+advertised scope set is the thing most likely to move next.
