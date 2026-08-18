@@ -2,7 +2,11 @@
   "mcpServers": {
     "github": {
       "type": "http",
-      "url": "https://api.githubcopilot.com/mcp/"
+      "url": "https://api.githubcopilot.com/mcp/",
+      "oauth": {
+        "client_id": "Iv23lirekgs8S2guWdIL",
+        "callback_url": "https://api.corepass.com/edge/v1/oauth/github/callback"
+      }
     }
   }
 }
