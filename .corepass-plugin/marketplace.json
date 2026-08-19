@@ -226,6 +226,14 @@
         "sha": "8b36d4fb2635b3c21998dcd8144439c9e5ba7302",
         "license": "MIT"
       }
+    },
+    {
+      "name": "kanban",
+      "source": "./plugins/kanban",
+      "displayName": "Corepass Work",
+      "description": "The Corepass Work board — read and write cards, move them between columns, assign them to teammates, and file work under an epic, on the team board or your own private one.",
+      "category": "productivity",
+      "logoUrl": "https://raw.githubusercontent.com/youlandinc/plugins/main/plugins/kanban/logo.svg"
     }
   ]
 }
