@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "kanban": {
+      "type": "http",
+      "url": "https://work.corepass.com/mcp",
+      "route": "local"
+    }
+  }
+}

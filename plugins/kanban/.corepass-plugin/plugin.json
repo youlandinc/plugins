@@ -1,0 +1,22 @@
+{
+  "name": "kanban",
+  "displayName": "Corepass Work",
+  "description": "The Corepass Work board — read and write cards, move them between columns, assign them to teammates, and file work under an epic, on the team board or your own private one.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Corepass",
+    "url": "https://work.corepass.com"
+  },
+  "homepage": "https://work.corepass.com",
+  "repository": "https://github.com/youlandinc/plugins",
+  "logo": "./logo.svg",
+  "keywords": [
+    "kanban",
+    "board",
+    "cards",
+    "tasks",
+    "epics",
+    "mcp",
+    "corepass"
+  ]
+}
